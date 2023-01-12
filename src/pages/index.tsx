@@ -152,6 +152,50 @@ const Home: NextPage = () => {
               <div>
                 <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
                 <Image
+                  alt="High School Restored Photo"
+                  src="/img20230112_1513311312.png"
+                  className="w-342 h-512 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_1513311312-new.png"
+                  className="w-342 h-512 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
+                  src="/img20230112_16020511.png"
+                  className="w-342 h-512 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_16020511-new.png"
+                  className="w-342 h-512 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
                   alt="Restored Photo"
                   src="/20230111_022818.jpg"
                   className="w-484 h-536 rounded-2xl"
