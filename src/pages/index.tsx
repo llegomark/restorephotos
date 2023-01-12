@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               <div>
                 <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
                 <Image
-                  alt="Original photo of my bro"
+                  alt="High School Restored Photo"
                   src="/original.png"
                   className="w-80 h-80 rounded-2xl"
                   width={320}
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
               <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
                 <Image
-                  alt="Restored photo of my bro"
+                  alt="High School Restored Photo"
                   width={320}
                   height={320}
                   src="/restored.png"
@@ -64,8 +64,8 @@ const Home: NextPage = () => {
               <div>
                 <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
                 <Image
-                  alt="Original photo of my bro"
-                  src="/img20230112_16102985_0001.png"
+                  alt="High School Restored Photo"
+                  src="/img20230112_16102985231.png"
                   className="w-80 h-80 rounded-2xl"
                   width={320}
                   height={320}
@@ -74,10 +74,10 @@ const Home: NextPage = () => {
               <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
                 <Image
-                  alt="Restored photo of my bro"
+                  alt="High School Restored Photo"
                   width={320}
                   height={320}
-                  src="/img20230112_16102985_0001-new.png"
+                  src="/img20230112_16102985231-new.png"
                   className="w-80 h-80 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>
@@ -86,7 +86,51 @@ const Home: NextPage = () => {
               <div>
                 <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
                 <Image
-                  alt="Original photo of my bro"
+                  alt="High School Restored Photo"
+                  src="/img20230112_15511412.png"
+                  className="w-80 h-80 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_15511412-new.png"
+                  className="w-80 h-80 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
+                  src="/img20230112_15202451.png"
+                  className="w-80 h-80 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_15202451-new.png"
+                  className="w-80 h-80 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="High School Restored Photo"
                   src="/img20230112_15542521_0002.png"
                   className="w-342 h-512 rounded-2xl"
                   width={320}
@@ -96,11 +140,33 @@ const Home: NextPage = () => {
               <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
                 <Image
-                  alt="Restored photo of my bro"
+                  alt="High School Restored Photo"
                   width={320}
                   height={320}
                   src="/img20230112_15542521_0002-new.png"
                   className="w-342 h-512 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Restored Photo"
+                  src="/20230111_022818.jpg"
+                  className="w-484 h-536 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/20230111_022818-new.jpg"
+                  className="w-484 h-536 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>
             </div>
