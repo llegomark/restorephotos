@@ -83,20 +83,21 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
+      <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Predictions typically complete within 20 seconds.</span>
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
           Restore Blurred Face Photos
         </h2>
         <p className="text-slate-500">
           {" "}
-          <CountUp start={10000} end={30415} />{" "}
+          <CountUp start={1000} end={3415} />{" "}
           photos generated and counting.
         </p>
         <ResizablePanel>
           <AnimatePresence mode="wait">
             <motion.div className="flex justify-between items-center w-full flex-col mt-4">
               <Toggle
-                className={`${restoredLoaded ? "visible" : "invisible"} mb-6`}
+                className={`${restoredLoaded ? "visible" : "invisible"} mb-2`}
                 sideBySide={sideBySide}
                 setSideBySide={(newVal) => setSideBySide(newVal)}
               />

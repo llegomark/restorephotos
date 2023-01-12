@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
         <h2 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-          Restoring old and blurry{" "} 
+          Restoring old and blurry{" "}
           face photos{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
@@ -35,9 +35,75 @@ const Home: NextPage = () => {
         </Link>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
-            Please take a look at this restoration of a photo of me from 2007 when I was in high school.
+            Please take a look at these comparison photos of me, which display the original image and the restored version.
           </p>
           <div className="flex flex-col space-y-10 mt-4 mb-10">
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  src="/img20230112_15081124.png"
+                  className="w-200 h-277 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_15081124-new.png"
+                  className="w-200 h-277 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  src="/img20230112_15231671.png"
+                  className="w-420 h-460 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_15231671-new.png"
+                  className="w-420 h-460 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  src="/img20230112_15214383.png"
+                  className="w-420 h-460 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_15214383-new.png"
+                  className="w-420 h-460 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
               <div>
                 <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
