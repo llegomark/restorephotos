@@ -13,5 +13,13 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["upcdn.io", "replicate.delivery"],
+  },
+  experimental: {
+    fontLoaders: [
+      { loader: '@next/font/google', options: { subsets: ['latin'] } },
+    ],
+  },
 };
 export default config;

@@ -21,6 +21,9 @@ export const serverSchema = z.object({
   ),
   DISCORD_CLIENT_ID: z.string(),
   DISCORD_CLIENT_SECRET: z.string(),
+  REPLICATE_API_KEY: z.string(),
+  UPSTASH_REDIS_REST_URL: z.string(),
+  UPSTASH_REDIS_REST_TOKEN: z.string(),
 });
 
 /**
