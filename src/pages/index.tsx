@@ -17,21 +17,21 @@ const Home: NextPage = () => {
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
         <h2 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-          Restoring old and blurry face photos{" "}
+          Restoring old and blurry{" "} 
+          face photos{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
-            <span className="relative">using AI</span>
+            <span className="relative">using AI.</span>
           </span>{" "}
-          for everyone.
         </h2>
         <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
-          Bring your old and blurry face photos back to life with our AI restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.
+          Bring your old and blurry face photos back to life with our Artificial Intelligence (AI) restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.
         </p>
         <Link
           className="bg-black rounded-full text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80"
           href="/restore"
         >
-          RESTORE YOUR MEMORIES NOW
+          <p className="font-bold text-lg sm:text-xl">RESTORE YOUR MEMORIES NOW</p>
         </Link>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
