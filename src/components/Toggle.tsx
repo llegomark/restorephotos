@@ -18,9 +18,8 @@ export default function Toggle({
     <Switch.Group as="div" {...props}>
       <div className="flex items-center">
         <span
-          className={`text-sm mr-3 font-medium ${
-            !sideBySide ? "text-gray-900" : "text-gray-500"
-          }`}
+          className={`text-sm mr-3 font-medium ${!sideBySide ? "text-gray-900" : "text-gray-500"
+            }`}
         >
           Side by Side
         </span>
@@ -42,9 +41,8 @@ export default function Toggle({
         </Switch>
         <Switch.Label as="span" className="ml-3">
           <span
-            className={`text-sm font-medium ${
-              sideBySide ? "text-gray-900" : "text-gray-500"
-            } `}
+            className={`text-sm font-medium ${sideBySide ? "text-gray-900" : "text-gray-500"
+              } `}
           >
             Compare
           </span>

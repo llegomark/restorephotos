@@ -46,7 +46,8 @@ const Home: NextPage = () => {
       onUpdate={(file: any) => {
         if (file.length !== 0) {
           setPhotoName(file[0].originalFile.originalFileName);
-          setOriginalPhoto(file[0].fileUrl);
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+          setOriginalPhoto(file[0].fileUrl.replace("raw", "thumbnail"));
           generatePhoto(file[0].fileUrl);
         }
       }}
@@ -84,7 +85,7 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
-      <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Predictions typically complete within 20 seconds.</span>
+        <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Predictions typically complete within 20 seconds.</span>
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
           Restore Blurred Face Photos
         </h2>

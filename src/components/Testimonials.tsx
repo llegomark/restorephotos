@@ -146,7 +146,7 @@ export function Testimonials() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto md:text-center">
           <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
-           Don't take our word for it, see what our customers have to say
+            Don't take our word for it, see what our website users have to say
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-slate-700 leading-7">
             Discover why people worldwide have fallen in love with our product. Read testimonials and find out what they have to say.
@@ -165,7 +165,7 @@ export function Testimonials() {
                     className="hover:scale-105 transition duration-300 ease-in-out"
                   >
                     <a href={testimonial.link}>
-                    {/* <a href={testimonial.link} target="_blank" rel="noreferrer"> */}
+                      {/* <a href={testimonial.link} target="_blank" rel="noreferrer"> */}
                       <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
                         <blockquote className="relative">
                           <p className="text-lg tracking-tight text-slate-900">
