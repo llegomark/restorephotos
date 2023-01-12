@@ -1,28 +1,16 @@
-# Create T3 App
+# FACEPHOTOS.AI
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+![Web capture_13-1-2023_42544_facephotos vercel app](https://user-images.githubusercontent.com/111579522/212173727-e5acadde-8e26-4020-8325-7ab1ff5ab1f0.jpeg)
 
-## What's next? How do I make an app with this?
+Facephotos.ai is a website that utilizes cutting-edge Artificial Intelligence (AI) technology to restore old and blurry face photos. The website offers a free service that allows users to upload their photos and bring them back to life using the GFPGAN model from the Tencent ARC Lab.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+The process is simple and easy to use. Users can upload any photo to the website, which will then be sent through the GFPGAN model using a Next.js API route. The restored photo will then be returned to the user, allowing them to keep their memories alive forever.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+The GFPGAN model is designed to develop a practical algorithm for real-world face restoration. It leverages rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration. This means the model can restore the most heavily degraded or blurry photos with high accuracy.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+For those interested in learning more about the technology behind Facephotos.ai, the website includes links to the GFPGAN Github page and the research paper on the technology.
 
-## Learn More
+Facephotos.ai is a valuable resource for anyone looking to restore their old and blurry face photos. With its user-friendly interface and advanced AI technology, the website makes it easy to bring your memories back to life. So, go ahead and give it a try today and start restoring your photos for free.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+TencentARC Github: https://github.com/TencentARC/GFPGAN
+Research Paper: https://arxiv.org/abs/2101.04061
