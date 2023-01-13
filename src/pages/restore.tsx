@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
@@ -20,6 +21,7 @@ import Toggle from "../components/Toggle";
 import appendNewToName from "../utils/appendNewToName";
 import downloadPhoto from "../utils/downloadPhoto";
 import CountUp from "react-countup";
+import FAQ from "../components/FAQ";
 
 // Configuration for the uploader
 const uploader = Uploader({ apiKey: "free" });
@@ -46,9 +48,8 @@ const Home: NextPage = () => {
       onUpdate={(file: any) => {
         if (file.length !== 0) {
           setPhotoName(file[0].originalFile.originalFileName);
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-call
           setOriginalPhoto(file[0].fileUrl.replace("raw", "thumbnail"));
-          generatePhoto(file[0].fileUrl);
+          generatePhoto(file[0].fileUrl.replace("raw", "thumbnail"));
         }
       }}
       width="670px"
@@ -193,6 +194,7 @@ const Home: NextPage = () => {
             </motion.div>
           </AnimatePresence>
         </ResizablePanel>
+        <FAQ />
       </main>
       <Footer />
     </div>
