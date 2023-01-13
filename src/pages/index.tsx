@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
+import Frequentlyasked from "../components/Frequentlyasked";
 
 const Home: NextPage = () => {
   return (
@@ -17,12 +18,13 @@ const Home: NextPage = () => {
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
         <h2 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-          Restoring old and blurry{" "}
-          face photos{" "}
+          Unleash the{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
-            <span className="relative">using AI.</span>
+            <span className="relative">power of AI</span>
           </span>{" "}
+          to revive your memories -{" "}
+          restore old and blurry face photos for free!
         </h2>
         <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
           Bring your old and blurry face photos back to life with our Artificial Intelligence (AI) restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.
@@ -35,7 +37,7 @@ const Home: NextPage = () => {
         </Link>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
-            Please take a look at these comparison photos of me, which display the original image and the restored version.
+            Please take a look at these comparison photos, which display the original image and the restored version.
           </p>
           <div className="flex flex-col space-y-10 mt-4 mb-10">
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
@@ -56,6 +58,50 @@ const Home: NextPage = () => {
                   width={320}
                   height={320}
                   src="/img20230112_15081124-new.png"
+                  className="w-200 h-277 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  src="/img20230112_1528195313.png"
+                  className="w-200 h-277 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_1528195313-new.png"
+                  className="w-200 h-277 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  src="/1231dda112a.png"
+                  className="w-200 h-277 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/1231dda112a-new.png"
                   className="w-200 h-277 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>
@@ -123,28 +169,6 @@ const Home: NextPage = () => {
                   height={320}
                   src="/img20230112_15214383-new.png"
                   className="w-420 h-460 rounded-2xl sm:mt-0 mt-2"
-                />
-              </div>
-            </div>
-            <div className="flex sm:space-x-2 sm:flex-row flex-col">
-              <div>
-                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
-                <Image
-                  alt="High School Restored Photo"
-                  src="/original.png"
-                  className="w-80 h-80 rounded-2xl"
-                  width={320}
-                  height={320}
-                />
-              </div>
-              <div className="sm:mt-0 mt-8">
-                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
-                <Image
-                  alt="High School Restored Photo"
-                  width={320}
-                  height={320}
-                  src="/restored.png"
-                  className="w-80 h-80 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>
             </div>
@@ -305,6 +329,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <Frequentlyasked />
       <Testimonials />
       <Footer />
     </div>

@@ -149,7 +149,7 @@ export function Testimonials() {
             Don't take our word for it, see what our website users have to say
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-slate-700 leading-7">
-            Discover why people worldwide have fallen in love with our product. Read testimonials and find out what they have to say.
+            Discover why people worldwide have fallen in love with facephotos.ai. Read testimonials and find out what they have to say.
           </p>
         </div>
         <ul

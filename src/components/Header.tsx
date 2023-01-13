@@ -7,7 +7,7 @@ export default function Header() {
       <Link href="/" className="flex space-x-2">
         <Image
           alt="header text"
-          src="/vercelLogo.png"
+          src="/sophia.svg"
           className="sm:w-14 sm:h-14 w-9 h-9"
           width={36}
           height={36}
