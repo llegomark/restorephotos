@@ -85,7 +85,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
         <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Predictions typically complete within 20 seconds.</span>
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
           Restore Blurred Face Photos
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
         </p>
         <ResizablePanel>
           <AnimatePresence mode="wait">
-            <motion.div className="flex justify-between items-center w-full flex-col mt-4">
+            <motion.div className="flex justify-between items-center w-full flex-col mt-0">
               <Toggle
                 className={`${restoredLoaded ? "visible" : "invisible"} mb-2`}
                 sideBySide={sideBySide}
@@ -194,8 +194,8 @@ const Home: NextPage = () => {
             </motion.div>
           </AnimatePresence>
         </ResizablePanel>
-        <FAQ />
       </main>
+      <FAQ />
       <Footer />
     </div>
   );

@@ -14,3 +14,14 @@ Facephotos.ai is a valuable resource for anyone looking to restore their old and
 
 TencentARC Github: https://github.com/TencentARC/GFPGAN
 Research Paper: https://arxiv.org/abs/2101.04061
+
+## Future Tasks
+
+- [ ] Privacy Policy
+- [ ] Terms of Service
+- [ ] About Us
+- [ ] Contact Us
+- [ ] Add more models
+- [ ] Vercel OG image
+- [ ] Blog Page
+- [ ] Add NSFW filter
