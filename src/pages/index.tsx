@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           className="bg-black rounded-full text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80"
           href="/restore"
         >
-          <p className="font-bold text-lg sm:text-xl">RESTORE YOUR MEMORIES NOW</p>
+          <p className="font-bold text-lg sm:text-xl">RESTORE YOUR MEMORIES NOW &rarr;</p>
         </Link>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
@@ -57,6 +57,28 @@ const Home: NextPage = () => {
                   height={320}
                   src="/img20230112_15081124-new.png"
                   className="w-200 h-277 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  src="/img20230112_15185658.png"
+                  className="w-254 h-328 rounded-2xl"
+                  width={320}
+                  height={320}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                <Image
+                  alt="Elementary Days Restored Photo"
+                  width={320}
+                  height={320}
+                  src="/img20230112_15185658-new.png"
+                  className="w-254 h-328 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>
             </div>
