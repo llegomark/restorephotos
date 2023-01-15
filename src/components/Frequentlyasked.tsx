@@ -6,6 +6,12 @@ const faqs = [
       "RestorePhotos.app is a website that utilizes advanced Artificial Intelligence (AI) technology to restore old and blurry face photos.",
   },
   {
+    id: 14,
+    question: "How do I restore my old and blurry face photos?",
+    answer:
+      "To restore your old and blurry face photos, simply go this link (https://restorephotos.app/restore) and upload the photo to the website. The restored photo will be returned to you.",
+  },
+  {
     id: 2,
     question: "How does the website work?",
     answer:
@@ -70,6 +76,30 @@ const faqs = [
     question: "Will my personal information be shared with any third party?",
     answer:
       "RestorePhotos.app does not share, sell, or rent personal information to any third party.",
+  },
+  {
+    id: 15,
+    question: "How do I upload my photo?",
+    answer:
+      "To upload your photo, simply click the “Upload Photo” button on the website and select the photo you want to restore. The restored photo will be returned to you.",
+  },
+  {
+    id: 16,
+    question: "How do I download my restored photo?",
+    answer:
+      "To download your restored photo, simply click the “Download Photo” button on the website. The restored photo will be downloaded to your device.",
+  },
+  {
+    id: 17,
+    question: "How do I share my restored photo to social media?",
+    answer:
+      "This feature is currently under development and will be available soon.",
+  },
+  {
+    id: 19,
+    question: "How do I report a bug or issue?",
+    answer:
+      "To report a bug or issue, simply email me at markllego[at]gmail[dot]com.",
   },
 ]
 

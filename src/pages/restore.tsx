@@ -80,7 +80,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Restore Blurred Face Photos</title>
+        <title>Restore Blurred Face Photos - RestorePhotos App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
           Bring back your memories in focus, restore your blurred face photos with RestorePhotos.app
         </h2>
-        <p className="text-slate-500">
+        <p className="text-slate-500 mb-3">
           {" "}
           <CountUp start={1000} end={3415} />{" "}
           photos generated and counting.

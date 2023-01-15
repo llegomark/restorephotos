@@ -12,6 +12,12 @@ const faqs = [
       "No, the picture will only be temporarily saved for restoration and deleted after completion.",
   },
   {
+    id: 13,
+    question: "Do you have access to my photos?",
+    answer:
+      "No, the photos are only temporarily saved for restoration and deleted after completion.",
+  },
+  {
     id: 3,
     question: "Will the picture I upload to be used for any other purpose?",
     answer:
@@ -71,6 +77,36 @@ const faqs = [
     answer:
       "Individuals looking to restore their old and blurry face photos can benefit from RestorePhotos.app. Its user-friendly interface and advanced AI technology make it easy to bring memories back to life.",
   },
+  {
+    id: 14,
+    question: "How do I restore my old and blurry face photos?",
+    answer:
+      "To restore your old and blurry face photos, simply upload the photo to the website. The restored photo will be returned to you.",
+  },
+  {
+    id: 15,
+    question: "How do I upload my photo?",
+    answer:
+      "To upload your photo, simply click the “Upload Photo” button on the website and select the photo you want to restore. The restored photo will be returned to you.",
+  },
+  {
+    id: 16,
+    question: "How do I download my restored photo?",
+    answer:
+      "To download your restored photo, simply click the “Download Photo” button on the website. The restored photo will be downloaded to your device.",
+  },
+  {
+    id: 17,
+    question: "How do I share my restored photo to social media?",
+    answer:
+      "This feature is currently under development and will be available soon.",
+  },
+  {
+    id: 19,
+    question: "How do I report a bug or issue?",
+    answer:
+      "To report a bug or issue, simply email me at markllego[at]gmail[dot]com.",
+  },
 ]
 
 export default function FAQ() {
@@ -82,11 +118,8 @@ export default function FAQ() {
             <h2 className="text-3xl font-bold tracking-tight text-slate-900">Frequently Asked Questions (FAQ)</h2>
             <p className="mt-4 text-lg text-gray-500">
               The FAQ serves as a quick and easy reference guide for users who want to learn more about RestorePhotos.app, and can help users find answers to common questions they may have about the service.
-              Can’t find the answer you’re looking for? Reach out to our{' '}
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                customer support
-              </a>{' '}
-              team.
+              Can’t find the answer you’re looking for? Email me at{' '}
+              markllego[at]gmail[dot]com.
             </p>
           </div>
           <div className="mt-12 lg:col-span-2 lg:mt-0">

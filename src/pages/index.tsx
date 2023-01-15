@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Restore Old and Blurred Face Photos</title>
+        <title>Restore Old and Blurred Face Photos - RestorePhotos App</title>
       </Head>
 
       <Header />

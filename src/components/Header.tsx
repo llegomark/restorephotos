@@ -7,7 +7,7 @@ export default function Header() {
       <Link href="/" className="flex space-x-2">
         <Image
           alt="header text"
-          src="/sophia.svg"
+          src="/restorephotosapp.svg"
           className="sm:w-14 sm:h-14 w-9 h-9"
           width={36}
           height={36}
@@ -17,16 +17,14 @@ export default function Header() {
         </h1>
       </Link>
       {/* <a
-        href="#"
-        target="_blank"
-        rel="noreferrer"
+        href="restore"
       >
         <Image
-          alt="Vercel Icon"
-          src="/vercelLogo.png"
+          alt="Restore Icon"
+          src="/bulb.svg"
           className="sm:w-10 sm:h-[34px] w-8 h-[28px]"
           width={32}
-          height={28}
+          height={32}
         />
       </a> */}
     </header>
