@@ -86,9 +86,9 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
-        <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Predictions typically complete within 20 seconds.</span>
+        <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Face photo restoration typically takes 20 seconds.</span>
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Restore Blurred Face Photos
+          Bring back your memories in focus, restore your blurred face photos with RestorePhotos.app
         </h2>
         <p className="text-slate-500">
           {" "}

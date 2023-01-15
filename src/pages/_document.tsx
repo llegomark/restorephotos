@@ -8,19 +8,19 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Restore your old face photos and keep the memories alive."
+            content="Bring your old and blurry face photos back to life with RestorePhotos.app! Utilizing cutting-edge AI technology, our website offers a free service that allows you to upload your cherished memories and restore them using the GFPGAN model from the Tencent ARC Lab. Don't let your precious memories fade away, try RestorePhotos.app today and see the difference for yourself!"
           />
           <meta property="og:site_name" content="restorephotos.app" />
           <meta
             property="og:description"
-            content="Restore your old face photos and keep the memories alive."
+            content="Bring your old and blurry face photos back to life with RestorePhotos.app! Utilizing cutting-edge AI technology, our website offers a free service that allows you to upload your cherished memories and restore them using the GFPGAN model from the Tencent ARC Lab. Don't let your precious memories fade away, try RestorePhotos.app today and see the difference for yourself!"
           />
-          <meta property="og:title" content="Face Photo Restorer" />
+          <meta property="og:title" content="Revive Your Memories: AI Face Photo Restoration with RestorePhotos.app" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Face Photo Restorer" />
+          <meta name="twitter:title" content="Revive Your Memories: AI Face Photo Restoration with RestorePhotos.app" />
           <meta
             name="twitter:description"
-            content="Restore your old photos and keep the memories alive."
+            content="Bring your old and blurry face photos back to life with RestorePhotos.app! Utilizing cutting-edge AI technology, our website offers a free service that allows you to upload your cherished memories and restore them using the GFPGAN model from the Tencent ARC Lab. Don't let your precious memories fade away, try RestorePhotos.app today and see the difference for yourself!"
           />
           <meta
             property="og:image"
