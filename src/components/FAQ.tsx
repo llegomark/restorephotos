@@ -18,6 +18,12 @@ const faqs = [
       "No, the picture will only be temporarily saved for restoration and deleted after completion.",
   },
   {
+    id: 24,
+    question: "Can I upload multiple photos at once?",
+    answer:
+      "No, you can only upload one photo at a time. If you want to restore multiple photos, you can upload them one by one. We are working on a feature that allows you to upload multiple photos at once.",
+  },
+  {
     id: 3,
     question: "Do you have access to my photos?",
     answer:

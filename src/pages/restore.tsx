@@ -177,7 +177,7 @@ const Home: NextPage = () => {
                       setRestoredImage(null);
                       setRestoredLoaded(false);
                     }}
-                    className="bg-black rounded-full text-white font-medium px-4 py-2 mt-8 hover:bg-black/80 transition"
+                    className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
                   >
                     Upload New Photo
                   </button>
@@ -190,7 +190,7 @@ const Home: NextPage = () => {
                         appendNewToName(photoName!)
                       );
                     }}
-                    className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
+                    className="bg-black rounded-full text-white font-medium px-4 py-2 mt-8 hover:bg-black/80 transition"
                   >
                     Download Restored Photo
                   </button>
