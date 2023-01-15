@@ -1,9 +1,9 @@
 const faqs = [
   {
     id: 1,
-    question: "What is Facephotos.ai's privacy policy?",
+    question: "What is RestorePhotos.app's privacy policy?",
     answer:
-      "Facephotos.ai takes user privacy seriously and has implemented strict policies to protect user information. Photos uploaded by users will only be saved temporarily and deleted after restoration. They will not be used as training materials, and personal information will not be shared with any third party.",
+      "RestorePhotos.app takes user privacy seriously and has implemented strict policies to protect user information. Photos uploaded by users will only be saved temporarily and deleted after restoration. They will not be used as training materials, and personal information will not be shared with any third party.",
   },
   {
     id: 2,
@@ -21,13 +21,13 @@ const faqs = [
     id: 4,
     question: "Will my personal information be shared with any third party?",
     answer:
-      "Facephotos.ai does not share, sell, or rent personal information to any third party.",
+      "RestorePhotos.app does not share, sell, or rent personal information to any third party.",
   },
   {
     id: 5,
-    question: "What is Facephotos.ai?",
+    question: "What is RestorePhotos.app?",
     answer:
-      "Facephotos.ai is a website that utilizes advanced Artificial Intelligence (AI) technology to restore old and blurry face photos.",
+      "RestorePhotos.app is a website that utilizes advanced Artificial Intelligence (AI) technology to restore old and blurry face photos.",
   },
   {
     id: 6,
@@ -49,13 +49,13 @@ const faqs = [
   },
   {
     id: 9,
-    question: "What is the main advantage of the GFPGAN model used on Facephotos.ai?",
+    question: "What is the main advantage of the GFPGAN model used on RestorePhotos.app?",
     answer:
       "The main advantage of the GFPGAN model is its ability to restore heavily degraded or blurry photos with high accuracy. This is achieved by leveraging rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration and incorporating this Generative Facial Prior (GFP) into the restoration process through novel channel-split spatial feature transform layers. This allows for a good balance of realness and fidelity to be achieved with a single forward pass, making it a more efficient solution than traditional GAN inversion methods.",
   },
   {
     id: 10,
-    question: "Can I learn more about the technology behind Facephotos.ai?",
+    question: "Can I learn more about the technology behind RestorePhotos.app?",
     answer:
       "Additional information about the technology can be accessed by visiting the GFPGAN Github page (https://github.com/arc-lab-tencent/GFP-GAN) and by reading the related research paper available at (https://arxiv.org/abs/2101.04061) on the website.",
   },
@@ -67,9 +67,9 @@ const faqs = [
   },
   {
     id: 12,
-    question: "Who can benefit from Facephotos.ai?",
+    question: "Who can benefit from RestorePhotos.app?",
     answer:
-      "Individuals looking to restore their old and blurry face photos can benefit from Facephotos.ai. Its user-friendly interface and advanced AI technology make it easy to bring memories back to life.",
+      "Individuals looking to restore their old and blurry face photos can benefit from RestorePhotos.app. Its user-friendly interface and advanced AI technology make it easy to bring memories back to life.",
   },
 ]
 
@@ -81,7 +81,7 @@ export default function FAQ() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900">Frequently Asked Questions (FAQ)</h2>
             <p className="mt-4 text-lg text-gray-500">
-              The FAQ serves as a quick and easy reference guide for users who want to learn more about Facephotos.ai, and can help users find answers to common questions they may have about the service.
+              The FAQ serves as a quick and easy reference guide for users who want to learn more about RestorePhotos.app, and can help users find answers to common questions they may have about the service.
               Can’t find the answer you’re looking for? Reach out to our{' '}
               <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                 customer support

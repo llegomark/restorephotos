@@ -10,7 +10,7 @@ class MyDocument extends Document {
             name="description"
             content="Restore your old face photos and keep the memories alive."
           />
-          <meta property="og:site_name" content="restorePhotos.io" />
+          <meta property="og:site_name" content="restorephotos.app" />
           <meta
             property="og:description"
             content="Restore your old face photos and keep the memories alive."
@@ -24,11 +24,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://facephotos.vercel.app/og-image.png"
+            content="https://restorephotos.app/featuredimage.png"
           />
           <meta
             name="twitter:image"
-            content="https://facephotos.vercel.app/og-image.png"
+            content="https://restorephotos.app/featuredimage.png"
           />
         </Head>
         <body>
