@@ -22,8 +22,8 @@ import appendNewToName from "../utils/appendNewToName";
 import downloadPhoto from "../utils/downloadPhoto";
 import CountUp from "react-countup";
 import FAQ from "../components/FAQ";
+import SquigglyLines from "../components/SquigglyLines";
 
-// Configuration for the uploader
 const uploader = Uploader({ apiKey: "free" });
 const options = {
   maxFileCount: 1,
@@ -86,13 +86,18 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
-        <span className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Face photo restoration typically takes 20 seconds.</span>
+        <span className="text-sm font-semibold text-[#1d9bf0] mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200">Photo restoration typically takes 15 seconds.</span>
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Bring back your memories in focus, restore your blurred face photos with RestorePhotos.app
+          Bring back your memories in focus, restore your{" "} 
+          <span className="relative whitespace-nowrap text-[#3290EE]">
+            <SquigglyLines />
+            <span className="relative">blurred face photos</span>
+          </span>{" "}
+          with RestorePhotos.app
         </h2>
         <p className="text-slate-500 mb-3">
           {" "}
-          <CountUp start={1000} end={3415} />{" "}
+          <CountUp start={1000} end={3988} />{" "}
           photos generated and counting.
         </p>
         <ResizablePanel>
