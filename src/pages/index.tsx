@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
-import Frequentlyasked from "../components/Frequentlyasked";
+import FAQ from "../components/FAQ";
 
 const Home: NextPage = () => {
   return (
@@ -329,8 +329,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <Frequentlyasked />
       <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   );
