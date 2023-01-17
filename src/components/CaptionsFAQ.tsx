@@ -79,36 +79,108 @@ const faqs = [
   },
   {
     id: 14,
+    question: "What is a dramatic tone for photo captions?",
+    answer:
+      "A dramatic tone for photo captions uses language that is intense, powerful, and dramatic to evoke strong emotions in the viewer, such as awe, wonder, or fear.",
+  },
+  {
+    id: 15,
+    question: "What is a sarcastic tone for photo captions?",
+    answer:
+      "A sarcastic tone for photo captions uses language that is ironic, mocking, or satirical to make fun of the subject of the photograph, while being respectful of the subject.",
+  },
+  {
+    id: 16,
+    question: "What is a romantic tone for photo captions?",
+    answer:
+      "A romantic tone for photo captions uses language that is loving, tender, and affectionate to express the photographer's feelings for the subject of the photograph.",
+  },
+  {
+    id: 17,
+    question: "What is a surreal tone for photo captions?",
+    answer:
+      "A surreal tone for photo captions uses language that is dreamlike, mysterious, and magical to create a sense of fantasy and imagination in the viewer.",
+  },
+  {
+    id: 18,
+    question: "What is a provocative tone for photo captions?",
+    answer:
+      "A provocative tone for photo captions uses language that is shocking, controversial, or provocative to create a strong emotional response in the viewer, such as anger, disgust, or fear.",
+  },
+  {
+    id: 19,
+    question: "What is a solemn tone for photo captions?",
+    answer:
+      "A solemn tone for photo captions uses language that is somber, serious, and thoughtful to express the photographer's feelings of sadness, grief, or loss.",
+  },
+  {
+    id: 20,
+    question: "What is a adventurous tone for photo captions?",
+    answer:
+      "An adventurous tone for photo captions uses language that is exciting, daring, and bold to express the photographer's feelings of excitement, courage, or risk-taking.",
+  },
+  {
+    id: 21,
+    question: "What is a enigmatic tone for photo captions?",
+    answer:
+      "An enigmatic tone for photo captions uses language that is mysterious, ambiguous, and puzzling to create a sense of intrigue and curiosity in the viewer.",
+  },
+  {
+    id: 22,
+    question: "What is a optimistic tone for photo captions?",
+    answer:
+      "An optimistic tone for photo captions uses language that is hopeful, positive, and cheerful to express the photographer's feelings of joy, happiness, or optimism.",
+  },
+  {
+    id: 23,
+    question: "What is a elegant tone for photo captions?",
+    answer:
+      "An elegant tone for photo captions uses language that is refined, sophisticated, and classy to express the photographer's feelings of beauty, grace, or luxury.",
+  },
+  {
+    id: 24,
+    question: "What is a educational tone for photo captions?",
+    answer:
+      "An educational tone for photo captions uses language that is informative, factual, and educational to express the photographer's feelings of knowledge, learning, or understanding.",
+  },
+  {
+    id: 25,
+    question: "What is a journalistic tone for photo captions?",
+    answer:
+      "A journalistic tone for photo captions uses language that is factual, unbiased, and objective to express the photographer's feelings of truth, accuracy, or fairness.",
+  },
+  {
+    id: 26,
     question: "Do you have any tips for writing photo descriptions?",
     answer:
       "Yes, here are some tips for writing photo descriptions: 1. Use descriptive language to paint a picture of the scene. 2. Use the 5 W's (who, what, where, when, why) to provide context and background information. 3. Use the 3 C's (character, conflict, and climax) to tell a story. 4. Use the 5 S's (setting, subject, situation, significance, and symbolism) to describe the elements of the photograph. 5. Use the 5 S's (sensory, social, spiritual, sentimental, and sexual) to describe the emotions and feelings evoked by the photograph.",
   },
   {
-    id: 15,
+    id: 27,
     question: "Are the generated captions accurate and unique?",
     answer:
       "Yes, the generated captions are accurate and unique. They are based on the tone of the photo and the text that you enter. The captions are generated using a machine learning model that has been trained on a large dataset of captions and images.",
   },
   {
-    id: 16,
+    id: 28,
     question: "Will the generated captions be grammatically correct?",
     answer:
       "Yes, the generated captions will be grammatically correct. They are based on the tone of the photo and the text that you enter. The captions are generated using a machine learning model that has been trained on a large dataset of captions and images.",
   },
   {
-    id: 17,
+    id: 29,
     question: "How can I save the generated caption?",
     answer:
       "You can only copy the generated caption by clicking on the caption, it will automatically be copied to your clipboard and ready to be pasted on social media networks or any other platform you want to use it on.",
   },
   {
-    id: 18,
+    id: 30,
     question: "Who owns the rights of the caption?",
     answer:
       "You own all the rights of the captions you generate. It is your original content and you are free to use it as you wish, whether that be on social media, your website, or any other platform. However, it's always good to double-check that the image you are using the caption for is also owned by you or you have permission to use it.",
   },
   {
-    id: 19,
+    id: 31,
     question: "Can I use the captions for commercial purposes?",
     answer:
       "Yes, as the owner of the captions you generate, you have the right to use them for commercial purposes, such as for advertising, marketing, or any other type of business use. However, it's always a good idea to double-check that the image you are using the caption for is also owned by you or you have permission to use it for commercial purposes. Additionally, you should be aware that some types of commercial use may require additional rights or permissions.",
