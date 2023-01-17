@@ -12,14 +12,14 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-type vibeType = "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic";
+type vibeType = "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic" | "Dramatic" | "Sarcastic" | "Romantic" | "Surreal" | "Provocative" | "Solemn" | "Adventurous" | "Enigmatic" | "Optimistic" | "Elegant" | "Educational" | "Journalistic";
 
 interface DropDownProps {
-  vibe: "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic";
+  vibe: "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic" | "Dramatic" | "Sarcastic" | "Romantic" | "Surreal" | "Provocative" | "Solemn" | "Adventurous" | "Enigmatic" | "Optimistic" | "Elegant" | "Educational" | "Journalistic";
   setVibe: (vibe: vibeType) => void;
 }
 
-let vibes: vibeType[] = ["Professional", "Personal", "Humorous", "Poetic", "Nostalgic", "Inspirational", "Informative", "Empathetic", "Evocative", "Storytelling", "Minimalistic", "Reflective", "Artistic"];
+let vibes: vibeType[] = ["Professional", "Personal", "Humorous", "Poetic", "Nostalgic", "Inspirational", "Informative", "Empathetic", "Evocative", "Storytelling", "Minimalistic", "Reflective", "Artistic", "Dramatic", "Sarcastic", "Romantic", "Surreal", "Provocative", "Solemn", "Adventurous", "Enigmatic", "Optimistic", "Elegant", "Educational" , "Journalistic"];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
