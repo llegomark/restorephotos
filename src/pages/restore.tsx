@@ -23,6 +23,7 @@ import downloadPhoto from "../utils/downloadPhoto";
 import CountUp from "react-countup";
 import FAQ from "../components/FAQ";
 import SquigglyLines from "../components/SquigglyLines";
+import Link from "next/link";
 
 const uploader = Uploader({ apiKey: "free" });
 const options = {
@@ -85,10 +86,10 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-24 mt-20">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-15 mt-12">
         {/* <span className="text-sm font-semibold text-[#1d9bf0] mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200">Photo restoration typically takes 15 seconds.</span> */}
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Bring back your memories in focus, restore your{" "} 
+          Bring back your memories in focus, restore your{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
             <span className="relative">blurred face photos</span>
@@ -194,6 +195,16 @@ const Home: NextPage = () => {
                   >
                     Download Restored Photo
                   </button>
+                )}
+                {originalPhoto && !loading && (
+                <button className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition">
+                  <Link 
+                  href="/captions"
+                  target="_blank"
+                  >
+                    Generate Photo Captions &rarr;
+                  </Link>
+                </button>
                 )}
               </div>
             </motion.div>
