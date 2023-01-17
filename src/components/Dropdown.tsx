@@ -12,14 +12,14 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-type vibeType = "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic" | "Dramatic" | "Sarcastic" | "Romantic" | "Surreal" | "Provocative" | "Solemn" | "Adventurous" | "Enigmatic" | "Optimistic" | "Elegant" | "Educational" | "Journalistic";
+export type VibeType = "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic" | "Dramatic" | "Sarcastic" | "Romantic" | "Surreal" | "Provocative" | "Solemn" | "Adventurous" | "Enigmatic" | "Optimistic" | "Elegant" | "Educational" | "Journalistic";
 
 interface DropDownProps {
-  vibe: "Professional" | "Personal" | "Humorous" | "Poetic" | "Nostalgic" | "Inspirational" | "Informative" | "Empathetic" | "Evocative" | "Storytelling" | "Minimalistic" | "Reflective" | "Artistic" | "Dramatic" | "Sarcastic" | "Romantic" | "Surreal" | "Provocative" | "Solemn" | "Adventurous" | "Enigmatic" | "Optimistic" | "Elegant" | "Educational" | "Journalistic";
-  setVibe: (vibe: vibeType) => void;
+  vibe: VibeType
+  setVibe: (vibe: VibeType) => void;
 }
 
-let vibes: vibeType[] = ["Professional", "Personal", "Humorous", "Poetic", "Nostalgic", "Inspirational", "Informative", "Empathetic", "Evocative", "Storytelling", "Minimalistic", "Reflective", "Artistic", "Dramatic", "Sarcastic", "Romantic", "Surreal", "Provocative", "Solemn", "Adventurous", "Enigmatic", "Optimistic", "Elegant", "Educational" , "Journalistic"];
+let vibes: VibeType[] = ["Professional", "Personal", "Humorous", "Poetic", "Nostalgic", "Inspirational", "Informative", "Empathetic", "Evocative", "Storytelling", "Minimalistic", "Reflective", "Artistic", "Dramatic", "Sarcastic", "Romantic", "Surreal", "Provocative", "Solemn", "Adventurous", "Enigmatic", "Optimistic", "Elegant", "Educational" , "Journalistic"];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
@@ -53,7 +53,7 @@ export default function DropDown({ vibe, setVibe }: DropDownProps) {
         >
           <div className="">
             {vibes.map((vibeItem) => (
-              <Menu.Item>
+              <Menu.Item key={vibeItem}>
                 {({ active }) => (
                   <button
                     onClick={() => setVibe(vibeItem)}
