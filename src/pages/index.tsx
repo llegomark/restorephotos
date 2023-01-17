@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
+import Balancer from 'react-wrap-balancer'
 
 const Home: NextPage = () => {
   return (
@@ -17,16 +18,16 @@ const Home: NextPage = () => {
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-15 mt-12">
         <h2 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-          Unleash the{" "}
+        <Balancer>Unleash the{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
             <span className="relative">power of AI</span>
           </span>{" "}
           to revive your memories -{" "}
-          restore old and blurry face photos for free!
+          restore old and blurry face photos for free!</Balancer>
         </h2>
         <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
-          Bring your old and blurry face photos back to life with our Artificial Intelligence (AI) restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.
+        <Balancer>Bring your old and blurry face photos back to life with our Artificial Intelligence (AI) restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.</Balancer>
         </p>
         <div className="flex justify-center sm:mt-1 mt-6">
           <Link
@@ -44,7 +45,7 @@ const Home: NextPage = () => {
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
-            Please take a look at these comparison photos, which display the original image and the restored version.
+          <Balancer>Please take a look at these comparison photos, which display the original image and the restored version.</Balancer>
           </p>
           <div className="flex flex-col space-y-10 mt-4 mb-10">
             <div className="flex sm:space-x-2 sm:flex-row flex-col">

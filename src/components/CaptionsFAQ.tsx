@@ -1,3 +1,5 @@
+import Balancer from 'react-wrap-balancer'
+
 const faqs = [
   {
     id: 1,
@@ -191,7 +193,7 @@ export default function CaptionsFAQ() {
   return (
     <div className="bg-gray-50">
       <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900">Frequently Asked Questions (FAQ)</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center"><Balancer>Frequently Asked Questions (FAQ)</Balancer></h2>
         <div className="mt-8">
           <dl className="divide-y divide-gray-200">
             {faqs.map((faq) => (

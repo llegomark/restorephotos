@@ -24,6 +24,7 @@ import CountUp from "react-countup";
 import FAQ from "../components/FAQ";
 import SquigglyLines from "../components/SquigglyLines";
 import Link from "next/link";
+import Balancer from 'react-wrap-balancer'
 
 const uploader = Uploader({ apiKey: "free" });
 const options = {
@@ -89,16 +90,16 @@ const Home: NextPage = () => {
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-15 mt-12">
         {/* <span className="text-sm font-semibold text-[#1d9bf0] mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200">Photo restoration typically takes 15 seconds.</span> */}
         <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Bring back your memories in focus, restore your{" "}
+        <Balancer>Bring back your memories in focus, restore your{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
             <span className="relative">blurred face photos</span>
           </span>{" "}
-          with RestorePhotos.app
+          with RestorePhotos.app</Balancer>
         </h2>
         <p className="text-slate-500 mb-3">
-          {" "}
-          <CountUp start={1000} end={3988} />{" "}
+        {" "}
+          <CountUp start={3000} end={4088} />{" "}
           photos generated and counting.
         </p>
         <ResizablePanel>
