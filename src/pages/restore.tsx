@@ -183,6 +183,15 @@ const Home: NextPage = () => {
                     Upload New Photo
                   </button>
                 )}
+                                {originalPhoto && !loading && (
+                <button className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition">
+                  <Link 
+                  href="/captions"
+                  >
+                    Generate Photo Captions &rarr;
+                  </Link>
+                </button>
+                )}
                 {restoredLoaded && (
                   <button
                     onClick={() => {
@@ -195,16 +204,6 @@ const Home: NextPage = () => {
                   >
                     Download Restored Photo
                   </button>
-                )}
-                {originalPhoto && !loading && (
-                <button className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition">
-                  <Link 
-                  href="/captions"
-                  target="_blank"
-                  >
-                    Generate Photo Captions &rarr;
-                  </Link>
-                </button>
                 )}
               </div>
             </motion.div>
