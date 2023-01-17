@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
-import FAQ from "../components/FAQ";
 
 const Home: NextPage = () => {
   return (
@@ -29,12 +28,26 @@ const Home: NextPage = () => {
         <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
           Bring your old and blurry face photos back to life with our Artificial Intelligence (AI) restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.
         </p>
-        <Link
+        <div className="flex justify-center sm:mt-1 mt-6">
+          <Link
+            className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 hover:bg-black/80 mr-4"
+            href="/restore"
+          >
+            Face Restoration &rarr;
+          </Link>
+          <Link
+            className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 hover:bg-black/80"
+            href="/captions"
+          >
+            Generate Photo Captions &rarr;
+          </Link>
+        </div>
+        {/* <Link
           className="bg-black rounded-full text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80"
           href="/restore"
         >
           <p className="font-bold text-lg sm:text-xl">RESTORE YOUR MEMORIES NOW &rarr;</p>
-        </Link>
+        </Link> */}
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
             Please take a look at these comparison photos, which display the original image and the restored version.
@@ -330,7 +343,6 @@ const Home: NextPage = () => {
         </div>
       </main>
       <Testimonials />
-      <FAQ />
       <Footer />
     </div>
   );

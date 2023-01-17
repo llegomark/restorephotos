@@ -42,5 +42,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 /src/pages/api/
+/src/pages/captions.tsx
 
 .vercel

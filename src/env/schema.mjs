@@ -24,6 +24,7 @@ export const serverSchema = z.object({
   REPLICATE_API_KEY: z.string(),
   UPSTASH_REDIS_REST_URL: z.string(),
   UPSTASH_REDIS_REST_TOKEN: z.string(),
+  OPENAI_API_KEY: z.string(),
 });
 
 /**

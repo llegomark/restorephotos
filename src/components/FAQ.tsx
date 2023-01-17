@@ -143,6 +143,12 @@ const faqs = [
     answer:
       "It is free to restore a photo. However, advertisements will be displayed on the website to support the service and continue improving it for users. A subscription-based model may be considered in the future.",
   },
+  {
+    id: 25,
+    question: "Why is my face is different from the original photo?",
+    answer:
+      "The GFPGAN model is a practical algorithm for real-world face restoration. It utilizes rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration. This means the model can restore heavily degraded or blurry photos with high accuracy. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
+  },
 ]
 
 export default function FAQ() {
