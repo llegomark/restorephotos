@@ -16,6 +16,7 @@ Research Paper: https://arxiv.org/abs/2101.04061
 ## Future Tasks
 
 - [ ] Authentication
+- [ ] Functional Navigation and Footer
 - [ ] Privacy Policy
 - [ ] Terms of Service
 - [ ] About Us
