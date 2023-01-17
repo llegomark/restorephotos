@@ -1,6 +1,3 @@
-import { Disclosure } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/24/outline'
-
 const faqs = [
   {
     id: 1,
@@ -79,6 +76,42 @@ const faqs = [
     question: "What is an artistic tone for photo captions?",
     answer:
       "An artistic tone for photo captions uses language that evokes the sense of art and creativity. It can be used to describe the elements of composition, color, lighting, and other techniques used to create the image, highlighting the photographer's skill and appreciation of the photograph as a piece of art.",
+  },
+  {
+    id: 14,
+    question: "Do you have any tips for writing photo descriptions?",
+    answer:
+      "Yes, here are some tips for writing photo descriptions: 1. Use descriptive language to paint a picture of the scene. 2. Use the 5 W's (who, what, where, when, why) to provide context and background information. 3. Use the 3 C's (character, conflict, and climax) to tell a story. 4. Use the 5 S's (setting, subject, situation, significance, and symbolism) to describe the elements of the photograph. 5. Use the 5 S's (sensory, social, spiritual, sentimental, and sexual) to describe the emotions and feelings evoked by the photograph.",
+  },
+  {
+    id: 15,
+    question: "Are the generated captions accurate and unique?",
+    answer:
+      "Yes, the generated captions are accurate and unique. They are based on the tone of the photo and the text that you enter. The captions are generated using a machine learning model that has been trained on a large dataset of captions and images.",
+  },
+  {
+    id: 16,
+    question: "Will the generated captions be grammatically correct?",
+    answer:
+      "Yes, the generated captions will be grammatically correct. They are based on the tone of the photo and the text that you enter. The captions are generated using a machine learning model that has been trained on a large dataset of captions and images.",
+  },
+  {
+    id: 17,
+    question: "How can I save the generated caption?",
+    answer:
+      "You can only copy the generated caption by clicking on the caption, it will automatically be copied to your clipboard and ready to be pasted on social media networks or any other platform you want to use it on.",
+  },
+  {
+    id: 18,
+    question: "Who owns the rights of the caption?",
+    answer:
+      "You own all the rights of the captions you generate. It is your original content and you are free to use it as you wish, whether that be on social media, your website, or any other platform. However, it's always good to double-check that the image you are using the caption for is also owned by you or you have permission to use it.",
+  },
+  {
+    id: 19,
+    question: "Can I use the captions for commercial purposes?",
+    answer:
+      "Yes, as the owner of the captions you generate, you have the right to use them for commercial purposes, such as for advertising, marketing, or any other type of business use. However, it's always a good idea to double-check that the image you are using the caption for is also owned by you or you have permission to use it for commercial purposes. Additionally, you should be aware that some types of commercial use may require additional rights or permissions.",
   },
 ]
 
