@@ -186,7 +186,9 @@ export default function FAQ() {
                 {faq.question}
               </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
-                <p className="text-lg text-slate-700">{faq.answer}</p>
+                <p className="text-justify text-lg text-slate-700">
+                  {faq.answer}
+                </p>
               </dd>
             </div>
           ))}

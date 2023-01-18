@@ -146,8 +146,8 @@ export function Testimonials() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
-            Don't take our word for it, see what our web application users have
-            to say
+            Hear It Straight From the Source: Our Web Application Users Speak
+            for Themselves
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-7 text-slate-700">
             Discover why people worldwide have fallen in love with
@@ -168,7 +168,6 @@ export function Testimonials() {
                     className="transition duration-300 ease-in-out hover:scale-105"
                   >
                     <a href={testimonial.link}>
-                      {/* <a href={testimonial.link} target="_blank" rel="noreferrer"> */}
                       <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
                         <blockquote className="relative">
                           <p className="text-lg tracking-tight text-slate-900">

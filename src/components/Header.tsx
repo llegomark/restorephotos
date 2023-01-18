@@ -6,7 +6,7 @@ export default function Header() {
     <header className="mt-5 flex w-full items-center justify-between border-b-2 px-2 pb-7 sm:px-4">
       <Link href="/" className="flex space-x-2">
         <Image
-          alt="header text"
+          alt="Restore Photos App Logo"
           src="/restorephotosapp.svg"
           className="h-9 w-9 sm:h-14 sm:w-14"
           width={36}

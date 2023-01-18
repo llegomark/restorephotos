@@ -20,15 +20,14 @@ const Home: NextPage = () => {
           Unleash the{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
-            <span className="relative">power of AI</span>
+            <span className="relative">Power of AI</span>
           </span>{" "}
-          to revive your memories - restore old and blurry face photos for free!
+          to Revive Your Memories - Restore Old and Blurry Face Photos for Free!
         </h2>
         <p className="mx-auto mt-12 max-w-xl text-lg leading-7 text-slate-700">
-          Bring your old and blurry face photos back to life with our Artificial
-          Intelligence (AI) restoration service. Keep your memories alive
-          forever, and at no cost to you - start restoring your photos today for
-          free.
+          Bring your photos back to life with our Artificial
+          Intelligence (AI) restoration service. Our AI-powered face restoration
+          service can restore your old and blurry face photos in seconds.{" "}
         </p>
         <div className="mt-6 flex justify-center sm:mt-1 mb-10">
           <Link
@@ -46,7 +45,7 @@ const Home: NextPage = () => {
         </div>
         <div className="mt-12 flex w-full flex-col items-center justify-between">
           <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
-            From faded to vibrant: See the restoration transformation
+          From Faded to Vibrant: See the Restoration Transformation
           </h2>
           <div className="mt-4 mb-10 flex flex-col space-y-10">
             <div className="flex flex-col sm:flex-row sm:space-x-2">

@@ -210,7 +210,7 @@ export default function CaptionsFAQ() {
                 {faq.question}
               </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
-                <p className="text-lg text-slate-700">{faq.answer}</p>
+                <p className="text-lg text-slate-700 text-justify">{faq.answer}</p>
               </dd>
             </div>
           ))}

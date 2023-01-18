@@ -127,7 +127,7 @@ const Home: NextPage = () => {
               {restoredImage && originalPhoto && !sideBySide && (
                 <div className="flex flex-col sm:flex-row sm:space-x-4">
                   <div>
-                    <h2 className="mb-1 text-lg font-medium">Original Photo</h2>
+                    <h2 className="mb-1 text-lg text-lg">Original Photo</h2>
                     <Image
                       alt="original photo"
                       src={originalPhoto}
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <div className="mt-8 sm:mt-0">
-                    <h2 className="mb-1 text-lg font-medium">Restored Photo</h2>
+                    <h2 className="mb-1 text-lg text-lg">Restored Photo</h2>
                     <a href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
               {loading && (
                 <button
                   disabled
-                  className="mt-8 w-40 rounded-full bg-black px-4 pt-2 pb-3 font-medium text-white hover:bg-black/80"
+                  className="mt-8 w-40 rounded-full bg-black px-4 pt-2 pb-3 text-lg text-white hover:bg-black/80"
                 >
                   <span className="pt-4">
                     <LoadingDots color="white" style="large" />
@@ -177,14 +177,14 @@ const Home: NextPage = () => {
                       setRestoredImage(null);
                       setRestoredLoaded(false);
                     }}
-                    className="mt-8 rounded-full border bg-white px-4 py-2 font-medium text-black transition hover:bg-gray-100"
+                    className="mt-8 rounded-full border bg-white px-4 py-2 text-lg text-black transition hover:bg-gray-100"
                   >
                     Upload New Photo
                   </button>
                 )}
                 {originalPhoto && !loading && (
-                  <button className="mt-8 rounded-full border bg-white px-4 py-2 font-medium text-black transition hover:bg-gray-100">
-                    <Link href="/captions">Generate Photo Captions &rarr;</Link>
+                  <button className="mt-8 rounded-full border bg-white px-4 py-2 text-lg text-black transition hover:bg-gray-100">
+                    <Link href="/captions">Generate Photo Captions</Link>
                   </button>
                 )}
                 {restoredLoaded && (
@@ -195,7 +195,7 @@ const Home: NextPage = () => {
                         appendNewToName(photoName!)
                       );
                     }}
-                    className="mt-8 rounded-full bg-black px-4 py-2 font-medium text-white transition hover:bg-black/80"
+                    className="mt-8 rounded-full bg-black px-4 py-2 text-lg text-white transition hover:bg-black/80"
                   >
                     Download Restored Photo
                   </button>
