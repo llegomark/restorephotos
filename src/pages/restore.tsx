@@ -98,7 +98,7 @@ const Home: NextPage = () => {
         </h2>
         <p className="mb-3 text-slate-500">
           {" "}
-          <CountUp start={3000} end={4088} /> photos generated and counting.
+          <CountUp start={3000} end={5091} /> face restoration and counting.
         </p>
         <ResizablePanel>
           <AnimatePresence mode="wait">

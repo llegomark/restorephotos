@@ -1,5 +1,11 @@
 const faqs = [
   {
+    id: 32,
+    question: "Can you provide sample photo descriptions?",
+    answer:
+      "Yes, here are some sample photo descriptions: 1. A solo high school graduation photo of me from 2008. 2. A photo of me and my ex-girlfriend at the summit of Mt. Makiling. 3. A photo of my family at the beach. 4. A photo of my dog, Max, at the park. 5. A photo of my cat, Moly, lounging on the couch.",
+  },
+  {
     id: 1,
     question: "What is a professional tone for photo captions?",
     answer:

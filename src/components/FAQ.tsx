@@ -149,6 +149,24 @@ const faqs = [
     answer:
       "The GFPGAN model is a practical algorithm for real-world face restoration. It utilizes rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration. This means the model can restore heavily degraded or blurry photos with high accuracy. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
   },
+  {
+    id: 26,
+    question: "Can I restore a photo that is not a face?",
+    answer:
+      "No, the GFPGAN model is only trained on faces. Therefore, it can only restore photos that are faces.",
+  },
+  {
+    id: 27,
+    question: "Can I restore a photo that is not a human face?",
+    answer:
+      "No, the GFPGAN model is only trained on human faces. Therefore, it can only restore photos that are human faces.",
+  },
+  {
+    id: 28,
+    question: "Can I restore an old photo of myself?",
+    answer:
+      "Yes, you can restore an old photo of yourself. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
+  },
 ];
 
 export default function FAQ() {
