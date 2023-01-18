@@ -30,29 +30,30 @@ const Home: NextPage = () => {
           forever, and at no cost to you - start restoring your photos today for
           free.
         </p>
-        <div className="mt-6 flex justify-center sm:mt-1">
+        <div className="mt-6 flex justify-center sm:mt-1 mb-10">
           <Link
-            className="mr-4 rounded-xl bg-black px-4 py-3 font-medium text-white hover:bg-black/80 sm:mt-10"
+            className="mr-4 rounded-xl bg-black px-4 py-3 text-lg text-white hover:bg-black/80 sm:mt-10"
             href="/restore"
           >
-            Face Restoration &rarr;
+            Face Restoration
           </Link>
           <Link
-            className="rounded-xl bg-black px-4 py-3 font-medium text-white hover:bg-black/80 sm:mt-10"
+            className="rounded-xl bg-black px-4 py-3 text-lg text-white hover:bg-black/80 sm:mt-10"
             href="/captions"
           >
-            Generate Photo Captions &rarr;
+            Photo Captions
           </Link>
         </div>
-        <div className="mt-6 flex w-full flex-col items-center justify-between sm:mt-10">
-          <p className="mt-3 mb-3 text-sm text-gray-500 sm:text-base">
-            Please take a look at these comparison photos, which display the
-            original image and the restored version.
-          </p>
+        <div className="mt-12 flex w-full flex-col items-center justify-between">
+          <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
+            From faded to vibrant: See the restoration transformation
+          </h2>
           <div className="mt-4 mb-10 flex flex-col space-y-10">
             <div className="flex flex-col sm:flex-row sm:space-x-2">
               <div>
-                <h2 className="mb-1 text-lg font-medium">Original Photo</h2>
+                <h2 className="mb-1 text-base text-slate-700">
+                  Original Photo
+                </h2>
                 <Image
                   alt="Elementary Days Restored Photo"
                   src="/img20230112_15081124.png"
@@ -62,7 +63,9 @@ const Home: NextPage = () => {
                 />
               </div>
               <div className="mt-8 sm:mt-0">
-                <h2 className="mb-1 text-lg font-medium">Restored Photo</h2>
+                <h2 className="mb-1 text-base text-slate-700">
+                  Restored Photo
+                </h2>
                 <Image
                   alt="Elementary Days Restored Photo"
                   width={320}
