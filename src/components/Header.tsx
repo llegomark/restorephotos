@@ -16,8 +16,7 @@ export default function Header() {
           restorephotos.app
         </h1>
       </Link>
-      <a
-        href="restore"
+      <Link href="restore"
       >
         <Image
           alt="Restore Icon"
@@ -26,7 +25,7 @@ export default function Header() {
           width={32}
           height={32}
         />
-      </a>
+      </Link>
     </header>
   );
 }

@@ -87,14 +87,18 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="sm:mt-15 mt-12 flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
-        {/* <span className="text-sm font-semibold text-[#1d9bf0] mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200">Photo restoration typically takes 15 seconds.</span> */}
+        <span className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 text-sm font-semibold text-[#1d9bf0] transition-colors hover:bg-blue-200">
+          <Link href="/captions">
+            Ready to elevate your photo captions with AI? Try it now!
+          </Link>
+        </span>
         <h2 className="font-display mx-auto mb-5 max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
-          Bring back your memories in focus, restore your{" "}
+          See Your Loved Ones’ Faces in{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
-            <span className="relative">blurred face photos</span>
+            <span className="relative">Perfect Clarity</span>
           </span>{" "}
-          with RestorePhotos.app
+          With RestorePhotos.app
         </h2>
         <p className="mb-3 text-slate-500">
           {" "}
