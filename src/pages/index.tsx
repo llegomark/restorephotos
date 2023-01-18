@@ -6,51 +6,53 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
-import Balancer from 'react-wrap-balancer'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+    <div className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center py-2">
       <Head>
         <title>Restore Old and Blurred Face Photos - RestorePhotos App</title>
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-15 mt-12">
-        <h2 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-        <Balancer>Unleash the{" "}
+      <main className="sm:mt-15 mt-12 flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
+        <h2 className="font-display mx-auto max-w-4xl text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
+          Unleash the{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
             <span className="relative">power of AI</span>
           </span>{" "}
-          to revive your memories -{" "}
-          restore old and blurry face photos for free!</Balancer>
+          to revive your memories - restore old and blurry face photos for free!
         </h2>
-        <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
-        <Balancer>Bring your old and blurry face photos back to life with our Artificial Intelligence (AI) restoration service. Keep your memories alive forever, and at no cost to you - start restoring your photos today for free.</Balancer>
+        <p className="mx-auto mt-12 max-w-xl text-lg leading-7 text-slate-700">
+          Bring your old and blurry face photos back to life with our Artificial
+          Intelligence (AI) restoration service. Keep your memories alive
+          forever, and at no cost to you - start restoring your photos today for
+          free.
         </p>
-        <div className="flex justify-center sm:mt-1 mt-6">
+        <div className="mt-6 flex justify-center sm:mt-1">
           <Link
-            className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 hover:bg-black/80 mr-4"
+            className="mr-4 rounded-xl bg-black px-4 py-3 font-medium text-white hover:bg-black/80 sm:mt-10"
             href="/restore"
           >
             Face Restoration &rarr;
           </Link>
           <Link
-            className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 hover:bg-black/80"
+            className="rounded-xl bg-black px-4 py-3 font-medium text-white hover:bg-black/80 sm:mt-10"
             href="/captions"
           >
             Generate Photo Captions &rarr;
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
-          <p className="text-gray-500 mt-3 mb-3 sm:text-base text-sm">
-          <Balancer>Please take a look at these comparison photos, which display the original image and the restored version.</Balancer>
+        <div className="mt-6 flex w-full flex-col items-center justify-between sm:mt-10">
+          <p className="mt-3 mb-3 text-sm text-gray-500 sm:text-base">
+            Please take a look at these comparison photos, which display the
+            original image and the restored version.
           </p>
-          <div className="flex flex-col space-y-10 mt-4 mb-10">
-            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+          <div className="mt-4 mb-10 flex flex-col space-y-10">
+            <div className="flex flex-col sm:flex-row sm:space-x-2">
               <div>
-                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <h2 className="mb-1 text-lg font-medium">Original Photo</h2>
                 <Image
                   alt="Elementary Days Restored Photo"
                   src="/img20230112_15081124.png"
@@ -59,14 +61,14 @@ const Home: NextPage = () => {
                   height={320}
                 />
               </div>
-              <div className="sm:mt-0 mt-8">
-                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+              <div className="mt-8 sm:mt-0">
+                <h2 className="mb-1 text-lg font-medium">Restored Photo</h2>
                 <Image
                   alt="Elementary Days Restored Photo"
                   width={320}
                   height={320}
                   src="/img20230112_15081124-new.jpg"
-                  className="w-200 h-277 rounded-2xl sm:mt-0 mt-2"
+                  className="w-200 h-277 mt-2 rounded-2xl sm:mt-0"
                 />
               </div>
             </div>

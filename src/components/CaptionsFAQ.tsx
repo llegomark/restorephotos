@@ -1,5 +1,3 @@
-import Balancer from 'react-wrap-balancer'
-
 const faqs = [
   {
     id: 1,
@@ -187,24 +185,31 @@ const faqs = [
     answer:
       "Yes, as the owner of the captions you generate, you have the right to use them for commercial purposes, such as for advertising, marketing, or any other type of business use. However, it's always a good idea to double-check that the image you are using the caption for is also owned by you or you have permission to use it for commercial purposes. Additionally, you should be aware that some types of commercial use may require additional rights or permissions.",
   },
-]
+];
 
 export default function CaptionsFAQ() {
   return (
     <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
-      <h2 className="text-3xl font-bold tracking-tight text-slate-900 text-center"><Balancer>Frequently Asked Questions (FAQ)</Balancer></h2>
+      <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+        Frequently Asked Questions (FAQ)
+      </h2>
       <div className="mt-8">
         <dl className="divide-y divide-gray-200">
           {faqs.map((faq) => (
-            <div key={faq.id} className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8">
-              <dt className="text-base font-medium text-slate-900 md:col-span-5"><Balancer>{faq.question}</Balancer></dt>
+            <div
+              key={faq.id}
+              className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8"
+            >
+              <dt className="text-lg font-medium text-slate-900 md:col-span-5">
+                {faq.question}
+              </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
-                <p className="text-base text-slate-700"><Balancer>{faq.answer}</Balancer></p>
+                <p className="text-lg text-slate-700">{faq.answer}</p>
               </dd>
             </div>
           ))}
         </dl>
       </div>
     </div>
-  )
+  );
 }

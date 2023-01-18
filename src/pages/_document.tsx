@@ -15,9 +15,15 @@ class MyDocument extends Document {
             property="og:description"
             content="Bring your old and blurry face photos back to life with RestorePhotos.app! Utilizing cutting-edge AI technology, our website offers a free service that allows you to upload your cherished memories and restore them using the GFPGAN model from the Tencent ARC Lab. Don't let your precious memories fade away, try RestorePhotos.app today and see the difference for yourself!"
           />
-          <meta property="og:title" content="Revive Your Memories: AI Face Photo Restoration with RestorePhotos.app" />
+          <meta
+            property="og:title"
+            content="Revive Your Memories: AI Face Photo Restoration with RestorePhotos.app"
+          />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Revive Your Memories: AI Face Photo Restoration with RestorePhotos.app" />
+          <meta
+            name="twitter:title"
+            content="Revive Your Memories: AI Face Photo Restoration with RestorePhotos.app"
+          />
           <meta
             name="twitter:description"
             content="Bring your old and blurry face photos back to life with RestorePhotos.app! Utilizing cutting-edge AI technology, our website offers a free service that allows you to upload your cherished memories and restore them using the GFPGAN model from the Tencent ARC Lab. Don't let your precious memories fade away, try RestorePhotos.app today and see the difference for yourself!"

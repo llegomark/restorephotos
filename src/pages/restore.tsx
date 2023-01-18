@@ -24,7 +24,6 @@ import CountUp from "react-countup";
 import FAQ from "../components/FAQ";
 import SquigglyLines from "../components/SquigglyLines";
 import Link from "next/link";
-import Balancer from 'react-wrap-balancer'
 
 const uploader = Uploader({ apiKey: "free" });
 const options = {
@@ -80,31 +79,30 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+    <div className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center py-2">
       <Head>
         <title>Restore Blurred Face Photos - RestorePhotos App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-15 mt-12">
+      <main className="sm:mt-15 mt-12 flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
         {/* <span className="text-sm font-semibold text-[#1d9bf0] mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200">Photo restoration typically takes 15 seconds.</span> */}
-        <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-        <Balancer>Bring back your memories in focus, restore your{" "}
+        <h2 className="font-display mx-auto mb-5 max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
+          Bring back your memories in focus, restore your{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
             <span className="relative">blurred face photos</span>
           </span>{" "}
-          with RestorePhotos.app</Balancer>
+          with RestorePhotos.app
         </h2>
-        <p className="text-slate-500 mb-3">
-        {" "}
-          <CountUp start={3000} end={4088} />{" "}
-          photos generated and counting.
+        <p className="mb-3 text-slate-500">
+          {" "}
+          <CountUp start={3000} end={4088} /> photos generated and counting.
         </p>
         <ResizablePanel>
           <AnimatePresence mode="wait">
-            <motion.div className="flex justify-between items-center w-full flex-col mt-0">
+            <motion.div className="mt-0 flex w-full flex-col items-center justify-between">
               <Toggle
                 className={`${restoredLoaded ? "visible" : "invisible"} mb-2`}
                 sideBySide={sideBySide}
@@ -127,24 +125,24 @@ const Home: NextPage = () => {
                 />
               )}
               {restoredImage && originalPhoto && !sideBySide && (
-                <div className="flex sm:space-x-4 sm:flex-row flex-col">
+                <div className="flex flex-col sm:flex-row sm:space-x-4">
                   <div>
-                    <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                    <h2 className="mb-1 text-lg font-medium">Original Photo</h2>
                     <Image
                       alt="original photo"
                       src={originalPhoto}
-                      className="rounded-2xl relative"
+                      className="relative rounded-2xl"
                       width={475}
                       height={475}
                     />
                   </div>
-                  <div className="sm:mt-0 mt-8">
-                    <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                  <div className="mt-8 sm:mt-0">
+                    <h2 className="mb-1 text-lg font-medium">Restored Photo</h2>
                     <a href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
                         src={restoredImage}
-                        className="rounded-2xl relative sm:mt-0 mt-2 cursor-zoom-in"
+                        className="relative mt-2 cursor-zoom-in rounded-2xl sm:mt-0"
                         width={475}
                         height={475}
                         onLoadingComplete={() => setRestoredLoaded(true)}
@@ -156,7 +154,7 @@ const Home: NextPage = () => {
               {loading && (
                 <button
                   disabled
-                  className="bg-black rounded-full text-white font-medium px-4 pt-2 pb-3 mt-8 hover:bg-black/80 w-40"
+                  className="mt-8 w-40 rounded-full bg-black px-4 pt-2 pb-3 font-medium text-white hover:bg-black/80"
                 >
                   <span className="pt-4">
                     <LoadingDots color="white" style="large" />
@@ -165,13 +163,13 @@ const Home: NextPage = () => {
               )}
               {error && (
                 <div
-                  className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-8"
+                  className="relative mt-8 rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700"
                   role="alert"
                 >
                   <span className="block sm:inline">{error}</span>
                 </div>
               )}
-              <div className="flex space-x-2 justify-center">
+              <div className="flex justify-center space-x-2">
                 {originalPhoto && !loading && (
                   <button
                     onClick={() => {
@@ -179,19 +177,15 @@ const Home: NextPage = () => {
                       setRestoredImage(null);
                       setRestoredLoaded(false);
                     }}
-                    className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
+                    className="mt-8 rounded-full border bg-white px-4 py-2 font-medium text-black transition hover:bg-gray-100"
                   >
                     Upload New Photo
                   </button>
                 )}
-                                {originalPhoto && !loading && (
-                <button className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition">
-                  <Link 
-                  href="/captions"
-                  >
-                    Generate Photo Captions &rarr;
-                  </Link>
-                </button>
+                {originalPhoto && !loading && (
+                  <button className="mt-8 rounded-full border bg-white px-4 py-2 font-medium text-black transition hover:bg-gray-100">
+                    <Link href="/captions">Generate Photo Captions &rarr;</Link>
+                  </button>
                 )}
                 {restoredLoaded && (
                   <button
@@ -201,7 +195,7 @@ const Home: NextPage = () => {
                         appendNewToName(photoName!)
                       );
                     }}
-                    className="bg-black rounded-full text-white font-medium px-4 py-2 mt-8 hover:bg-black/80 transition"
+                    className="mt-8 rounded-full bg-black px-4 py-2 font-medium text-white transition hover:bg-black/80"
                   >
                     Download Restored Photo
                   </button>

@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import Balancer from 'react-wrap-balancer'
 
 const testimonials = [
   [
@@ -145,12 +144,15 @@ export function Testimonials() {
       className="py-10"
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto md:text-center">
-          <h2 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
-          <Balancer>Don't take our word for it, see what our web application users have to say</Balancer>
+        <div className="mx-auto text-center">
+          <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
+            Don't take our word for it, see what our web application users have
+            to say
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-slate-700 leading-7">
-          <Balancer>Discover why people worldwide have fallen in love with RestorePhotos.app. Read testimonials and find out what they have to say.</Balancer>
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-7 text-slate-700">
+            Discover why people worldwide have fallen in love with
+            RestorePhotos.app. Read testimonials and find out what they have to
+            say.
           </p>
         </div>
         <ul
@@ -163,7 +165,7 @@ export function Testimonials() {
                 {column.map((testimonial, testimonialIndex) => (
                   <li
                     key={testimonialIndex}
-                    className="hover:scale-105 transition duration-300 ease-in-out"
+                    className="transition duration-300 ease-in-out hover:scale-105"
                   >
                     <a href={testimonial.link}>
                       {/* <a href={testimonial.link} target="_blank" rel="noreferrer"> */}

@@ -1,5 +1,3 @@
-import Balancer from 'react-wrap-balancer'
-
 const faqs = [
   {
     id: 1,
@@ -69,7 +67,8 @@ const faqs = [
   },
   {
     id: 12,
-    question: "What is the main advantage of the GFPGAN model used on RestorePhotos.app?",
+    question:
+      "What is the main advantage of the GFPGAN model used on RestorePhotos.app?",
     answer:
       "The main advantage of the GFPGAN model is its ability to restore heavily degraded or blurry photos with high accuracy. This is achieved by leveraging rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration and incorporating this Generative Facial Prior (GFP) into the restoration process through novel channel-split spatial feature transform layers. This allows for a good balance of realness and fidelity to be achieved with a single forward pass, making it a more efficient solution than traditional GAN inversion methods.",
   },
@@ -136,8 +135,7 @@ const faqs = [
   {
     id: 23,
     question: "How long does it take to restore a photo?",
-    answer:
-      "It takes about 10-20 seconds to restore a photo.",
+    answer: "It takes about 10-20 seconds to restore a photo.",
   },
   {
     id: 24,
@@ -151,24 +149,31 @@ const faqs = [
     answer:
       "The GFPGAN model is a practical algorithm for real-world face restoration. It utilizes rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration. This means the model can restore heavily degraded or blurry photos with high accuracy. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
   },
-]
+];
 
 export default function FAQ() {
   return (
     <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
-      <h2 className="text-3xl font-bold tracking-tight text-slate-900 text-center"><Balancer>Frequently Asked Questions (FAQ)</Balancer></h2>
+      <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+        Frequently Asked Questions (FAQ)
+      </h2>
       <div className="mt-8">
         <dl className="divide-y divide-gray-200">
           {faqs.map((faq) => (
-            <div key={faq.id} className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8">
-              <dt className="text-base font-medium text-slate-900 md:col-span-5"><Balancer>{faq.question}</Balancer></dt>
+            <div
+              key={faq.id}
+              className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8"
+            >
+              <dt className="text-lg font-medium text-slate-900 md:col-span-5">
+                {faq.question}
+              </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
-                <p className="text-base text-slate-700"><Balancer>{faq.answer}</Balancer></p>
+                <p className="text-lg text-slate-700">{faq.answer}</p>
               </dd>
             </div>
           ))}
         </dl>
       </div>
     </div>
-  )
+  );
 }
