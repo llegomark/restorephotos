@@ -1,9 +1,33 @@
+interface LinkProps {
+  children: React.ReactNode;
+  url: string;
+  className?: string;
+}
+
+const Link: React.FC<LinkProps> = ({ children, url, className }) => (
+  <a href={url} className={className} target="_blank" rel="noopener noreferrer">
+    {children}
+  </a>
+);
+
 const faqs = [
   {
     id: 1,
     question: "What is RestorePhotos.app?",
     answer:
-      "RestorePhotos.app is a website that utilizes advanced Artificial Intelligence (AI) technology to restore old and blurry face photos.",
+      "RestorePhotos.app is a website that utilizes advanced Artificial Intelligence (AI) technology to restore old and blurry FACE photos.",
+  },
+  {
+    id: 27,
+    question: "Can I restore a photo that is not a human face?",
+    answer:
+      "No, the GFPGAN model is only trained on human faces. Therefore, it can only restore photos that are human faces.",
+  },
+  {
+    id: 28,
+    question: "Can I restore an old photo of myself?",
+    answer:
+      "Yes, you can restore an old photo of yourself. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
   },
   {
     id: 2,
@@ -76,7 +100,7 @@ const faqs = [
     id: 13,
     question: "Can I learn more about the technology behind RestorePhotos.app?",
     answer:
-      "Additional information about the technology can be accessed by visiting the GFPGAN Github page (https://github.com/arc-lab-tencent/GFP-GAN) and by reading the related research paper available at (https://arxiv.org/abs/2101.04061) on the website.",
+      "Additional information about the technology can be accessed by visiting the GFPGAN Github page and by reading the related research paper available on the website.",
   },
   {
     id: 14,
@@ -149,24 +173,6 @@ const faqs = [
     answer:
       "The GFPGAN model is a practical algorithm for real-world face restoration. It utilizes rich and diverse priors encapsulated in a pre-trained face GAN (e.g., StyleGAN2) for blind face restoration. This means the model can restore heavily degraded or blurry photos with high accuracy. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
   },
-  {
-    id: 26,
-    question: "Can I restore a photo that is not a face?",
-    answer:
-      "No, the GFPGAN model is only trained on faces. Therefore, it can only restore photos that are faces.",
-  },
-  {
-    id: 27,
-    question: "Can I restore a photo that is not a human face?",
-    answer:
-      "No, the GFPGAN model is only trained on human faces. Therefore, it can only restore photos that are human faces.",
-  },
-  {
-    id: 28,
-    question: "Can I restore an old photo of myself?",
-    answer:
-      "Yes, you can restore an old photo of yourself. However, the model may not be able to restore the face exactly as it was in the original photo. This is because the model is trained on a large dataset of faces and may not be able to restore the face exactly as it was in the original photo.",
-  },
 ];
 
 export default function FAQ() {
@@ -187,7 +193,24 @@ export default function FAQ() {
               </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
                 <p className="text-justify text-lg text-slate-700">
-                  {faq.answer}
+                  {faq.answer} {" "}
+                  {faq.id === 13 ? (
+                    <Link
+                      url="https://github.com/TencentARC/GFPGAN"
+                      className="text-blue-500 underline"
+                    >
+                      GFPGAN Github page
+                    </Link>
+                  ) : null}
+                  {faq.id === 13 ? " and " : null}
+                  {faq.id === 13 ? (
+                    <Link
+                      url="https://arxiv.org/abs/2101.04061"
+                      className="text-blue-500 underline"
+                    >
+                      related research paper.
+                    </Link>
+                  ) : null}
                 </p>
               </dd>
             </div>
