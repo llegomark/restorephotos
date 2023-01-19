@@ -45,5 +45,3 @@ yarn-error.log*
 /src/pages/captions.tsx
 
 .vercel
-
-.vercel
