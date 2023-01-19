@@ -18,7 +18,7 @@
     "@prisma/client": "^4.9.0",
     "@tailwindcss/forms": "^0.5.3",
     "@upstash/ratelimit": "^0.1.5",
-    "@upstash/redis": "^1.19.1",
+    "@upstash/redis": "^1.19.3",
     "@vercel/analytics": "^0.1.8",
     "framer-motion": "^8.5.0",
     "next": "latest",
@@ -29,10 +29,10 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.42.1",
     "react-hot-toast": "^2.4.0",
-    "react-uploader": "^3.1.0",
+    "react-uploader": "^3.2.1",
     "react-use-measure": "^2.1.1",
     "request-ip": "^3.3.0",
-    "uploader": "^3.1.0",
+    "uploader": "^3.2.1",
     "zod": "^3.20.2"
   },
   "devDependencies": {

@@ -6,7 +6,6 @@ const testimonials = [
     {
       content:
         "I had an old family photo that was so blurry, I couldn't even make out my grandparents' faces. But after using RestorePhotos.app, the picture is clear and I can finally see their faces again. Thank you!",
-      link: "/restore",
       author: {
         name: "Rodolfo Santiago",
         role: "User",
@@ -16,7 +15,6 @@ const testimonials = [
     {
       content:
         "I was skeptical about using an AI for photo restoration, but RestorePhotos.app exceeded my expectations. They were able to restore an old photo of my parents' wedding day and it looks better than ever.",
-      link: "/restore",
       author: {
         name: "Mark Bacason",
         role: "User",
@@ -28,7 +26,6 @@ const testimonials = [
     {
       content:
         "I have a photo of my parents when they were young that was really blurry, but after using RestorePhotos.app, I can finally see their faces clearly. It's a memory I will treasure forever.",
-      link: "/restore",
       author: {
         name: "Junell Mabag",
         role: "User",
@@ -38,7 +35,6 @@ const testimonials = [
     {
       content:
         "I had a photo of my grandparents that was almost impossible to see due to the age and damage. RestorePhotos.app did an incredible job restoring it and now I can see all the details and it's like looking at a new photo.",
-      link: "/restore",
       author: {
         name: "Arlene Abanag",
         role: "User",
@@ -50,7 +46,6 @@ const testimonials = [
     {
       content:
         "RestorePhotos.app was able to bring an old photo of my family back to life. It's amazing how clear and sharp it looks now. I'm so happy I found this service.",
-      link: "/restore",
       author: {
         name: "Desmond Grey",
         role: "User",
@@ -60,7 +55,6 @@ const testimonials = [
     {
       content:
         "I have an old photo of my grandparents that I've always loved, but it was so blurry I couldn't see their faces clearly. RestorePhotos.app was able to restore it and now it's one of my most treasured possessions.",
-      link: "/restore",
       author: {
         name: "Ana Reyes",
         role: "User",
@@ -72,7 +66,6 @@ const testimonials = [
     {
       content:
         "I had an old family photo that was so blurry, I couldn't even make out my grandparents' faces. But after using RestorePhotos.app, the picture is clear and I can finally see their faces again. Thank you!",
-      link: "/restore",
       author: {
         name: "Maria Santos",
         role: "User",
@@ -82,7 +75,6 @@ const testimonials = [
     {
       content:
         "I was skeptical about using an AI for photo restoration, but RestorePhotos.app exceeded my expectations. They were able to restore an old photo of my parents' wedding day and it looks better than ever.",
-      link: "/restore",
       author: {
         name: "Jose dela Cruz",
         role: "User",
@@ -94,7 +86,6 @@ const testimonials = [
     {
       content:
         "I've tried other photo restoration services in the past, but none of them were able to bring my old photos back to life like RestorePhotos.app did. I'm so impressed with the results.",
-      link: "/restore",
       author: {
         name: "Eduardo Hernandez",
         role: "User",
@@ -104,7 +95,6 @@ const testimonials = [
     {
       content:
         "I've been looking for a way to restore an old photo of my great-grandparents for years. I finally found RestorePhotos.app and they did an amazing job. The photo is clear and I can see all the details now. I am so grateful.",
-      link: "/restore",
       author: {
         name: "Angelica Torres",
         role: "User",
@@ -116,7 +106,6 @@ const testimonials = [
     {
       content:
         "I have a lot of old and blurry photos of my family, but after using RestorePhotos.app, I can finally see them clearly. I am so happy I found this service.",
-      link: "/restore",
       author: {
         name: "Felipe Ortiz",
         role: "User",
@@ -126,7 +115,6 @@ const testimonials = [
     {
       content:
         "RestorePhotos.app was able to restore a photo of my grandparents that had been damaged in a flood. It was a precious memory that I thought was lost forever, but now I have it back and it looks just like new.",
-      link: "/restore",
       author: {
         name: "Lourdes Mendoza",
         role: "User",
@@ -167,34 +155,32 @@ export function Testimonials() {
                     key={testimonialIndex}
                     className="transition duration-300 ease-in-out hover:scale-105"
                   >
-                    <a href={testimonial.link}>
-                      <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
-                        <blockquote className="relative">
-                          <p className="text-lg tracking-tight text-slate-900">
-                            "{testimonial.content}"
-                          </p>
-                        </blockquote>
-                        <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                          <div>
-                            <div className="font-display text-base text-slate-900">
-                              {testimonial.author.name}
-                            </div>
-                            <div className="mt-1 text-sm text-slate-500">
-                              {testimonial.author.role}
-                            </div>
+                    <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+                      <blockquote className="relative">
+                        <p className="text-lg tracking-tight text-slate-900">
+                          "{testimonial.content}"
+                        </p>
+                      </blockquote>
+                      <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                        <div>
+                          <div className="font-display text-base text-slate-900">
+                            {testimonial.author.name}
                           </div>
-                          <div className="overflow-hidden rounded-full bg-slate-50">
-                            <Image
-                              className="h-14 w-14 object-cover"
-                              src={testimonial.author.image}
-                              alt="picture of the testimonial author"
-                              width={56}
-                              height={56}
-                            />
+                          <div className="mt-1 text-sm text-slate-500">
+                            {testimonial.author.role}
                           </div>
-                        </figcaption>
-                      </figure>
-                    </a>
+                        </div>
+                        <div className="overflow-hidden rounded-full bg-slate-50">
+                          <Image
+                            className="h-14 w-14 object-cover"
+                            src={testimonial.author.image}
+                            alt="picture of the testimonial author"
+                            width={56}
+                            height={56}
+                          />
+                        </div>
+                      </figcaption>
+                    </figure>
                   </li>
                 ))}
               </ul>
