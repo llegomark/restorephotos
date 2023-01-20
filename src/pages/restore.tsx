@@ -18,7 +18,6 @@ import FAQ from "../components/FAQ";
 import SquigglyLines from "../components/SquigglyLines";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
-import NSFWPredictor from "../utils/nsfwCheck";
 
 const uploader = Uploader({ apiKey: "free" });
 const options = {
@@ -26,15 +25,6 @@ const options = {
   mimeTypes: ["image/jpeg", "image/png", "image/jpg"],
   editor: { images: { crop: false } },
   styles: { colors: { primary: "#000" } },
-  onValidate: async (file: File): Promise<undefined | string> => {
-    let isSafe = false;
-    try {
-      isSafe = await NSFWPredictor.isSafeImg(file);
-    } catch (error) {
-      console.error("NSFW predictor threw an error", error);
-    }
-    return isSafe ? undefined : "NSFW content detected in the image";
-  },
 };
 
 const Restore: NextPage = () => {
