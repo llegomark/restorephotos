@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
+import Balancer from "react-wrap-balancer";
 
 const Home: NextPage = () => {
   return (
@@ -17,17 +18,20 @@ const Home: NextPage = () => {
       <Header />
       <main className="sm:mt-15 mt-12 flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
         <h2 className="font-display mx-auto max-w-4xl text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-          Unleash the{" "}
-          <span className="relative whitespace-nowrap text-[#3290EE]">
-            <SquigglyLines />
-            <span className="relative">Power of AI</span>
-          </span>{" "}
-          to Revive Your Memories - Restore Old and Blurry Face Photos for Free!
+          <Balancer>
+            Unleash the{" "}
+            <span className="relative whitespace-nowrap text-[#3290EE]">
+              <SquigglyLines />
+              <span className="relative">Power of AI</span>
+            </span>{" "}
+            to Revive Your Memories - Restore Old and Blurry Face Photos for
+            Free!
+          </Balancer>
         </h2>
         <p className="mx-auto mt-12 max-w-xl text-lg leading-7 text-slate-700">
-          Bring your photos back to life with our Artificial
-          Intelligence (AI) restoration service. Our AI-powered face restoration
-          service can restore your old and blurry face photos in seconds.{" "}
+          Bring your photos back to life with our Artificial Intelligence (AI)
+          restoration service. Our AI-powered face restoration service can
+          restore your old and blurry face photos in seconds.{" "}
         </p>
         <div className="mt-6 flex justify-center sm:mt-1 mb-10">
           <Link
@@ -45,7 +49,9 @@ const Home: NextPage = () => {
         </div>
         <div className="mt-12 flex w-full flex-col items-center justify-between">
           <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
-          From Faded to Vibrant: See the Restoration Transformation
+            <Balancer>
+              From Faded to Vibrant: See the Restoration Transformation
+            </Balancer>
           </h2>
           <div className="mt-4 mb-10 flex flex-col space-y-10">
             <div className="flex flex-col sm:flex-row sm:space-x-2">

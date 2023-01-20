@@ -21,7 +21,7 @@ export default function Header() {
       >
         <Image
           alt="Restore Icon"
-          src="/logo.png"
+          src="/Account.svg"
           className="sm:w-10 sm:h-[34px] w-8 h-[28px]"
           width={32}
           height={32}

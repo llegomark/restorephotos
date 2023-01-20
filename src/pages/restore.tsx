@@ -1,10 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-floating-promises */
 import { AnimatePresence, motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -24,6 +17,7 @@ import CountUp from "react-countup";
 import FAQ from "../components/FAQ";
 import SquigglyLines from "../components/SquigglyLines";
 import Link from "next/link";
+import Balancer from "react-wrap-balancer";
 
 const uploader = Uploader({ apiKey: "free" });
 const options = {
@@ -33,7 +27,7 @@ const options = {
   styles: { colors: { primary: "#000" } },
 };
 
-const Home: NextPage = () => {
+const Restore: NextPage = () => {
   const [originalPhoto, setOriginalPhoto] = useState<string | null>(null);
   const [restoredImage, setRestoredImage] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -93,12 +87,14 @@ const Home: NextPage = () => {
           </Link>
         </span>
         <h2 className="font-display mx-auto mb-5 max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
-          See Your Loved Ones’ Faces in{" "}
-          <span className="relative whitespace-nowrap text-[#3290EE]">
-            <SquigglyLines />
-            <span className="relative">Perfect Clarity</span>
-          </span>{" "}
-          With RestorePhotos.app
+          <Balancer>
+            See Your Loved Ones’ Faces in{" "}
+            <span className="relative whitespace-nowrap text-[#3290EE]">
+              <SquigglyLines />
+              <span className="relative">Perfect Clarity</span>
+            </span>{" "}
+            With RestorePhotos.app
+          </Balancer>
         </h2>
         <p className="mb-3 text-slate-500">
           {" "}
@@ -215,4 +211,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Restore;

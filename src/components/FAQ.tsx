@@ -386,7 +386,7 @@ const faqs = [
     id: 62,
     question: "How do I report a bug or issue?",
     answer:
-      "To report a bug or issue, you can open an issue on the RestorePhotos.app Github page or send an email to",
+      "To report a bug or issue, you can either open an issue on the RestorePhotos.app Github page or send an email to",
   },
 ];
 
@@ -404,10 +404,6 @@ export default function FAQ({ startId, endId }: FAQProps) {
       </h2>
       <div className="mt-8">
         <dl className="divide-y divide-gray-200">
-          {/* {faqs
-            .filter((faq) => faq.id >= startId && faq.id <= endId)
-            .map((faq) => ( */}
-          {/* {faqs.filter(faq => (faq.id >= startId && faq.id <= endId) || faq.id === 27 || faq.id === 28).map((faq) => ( */}
           {allFaqs.map((faq) => (
             <div
               key={faq.id}
@@ -436,7 +432,6 @@ export default function FAQ({ startId, endId }: FAQProps) {
                       related research paper.
                     </Link>
                   ) : null}
-                  {/* {faq.id === 27 || faq.id === 63 ? ( */}
                   {faq.id === 61 ? (
                     <Link
                       url="https://github.com/llegomark/restorephotos"
@@ -450,7 +445,7 @@ export default function FAQ({ startId, endId }: FAQProps) {
                       url="mailto:markllego@gmail.com?subject=RestorePhotos.app"
                       className="text-blue-500 underline"
                     >
-                      markllegoATgmail.com.
+                      markllego@gmail.com.
                     </Link>
                   ) : null}
                 </p>

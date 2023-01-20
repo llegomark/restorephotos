@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Balancer from "react-wrap-balancer";
 
 const testimonials = [
   [
@@ -134,8 +134,10 @@ export function Testimonials() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
-            Hear It Straight From the Source: Our Web Application Users Speak
-            for Themselves
+            <Balancer>
+              Hear It Straight From the Source: Our Web Application Users Speak
+              for Themselves
+            </Balancer>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-7 text-slate-700">
             Discover why people worldwide have fallen in love with

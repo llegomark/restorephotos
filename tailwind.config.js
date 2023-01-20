@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -13,4 +10,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require("@tailwindcss/forms"), require("@headlessui/tailwindcss")],
-};
+}
