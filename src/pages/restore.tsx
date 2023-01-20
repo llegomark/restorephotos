@@ -209,7 +209,7 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
-      <FAQ />
+      <FAQ startId={1} endId={26} />
       <Footer />
     </div>
   );
