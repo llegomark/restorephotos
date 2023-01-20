@@ -37,6 +37,5 @@ yarn-error.log*
 
 /src/pages/api/
 /src/pages/captions.tsx
-/src/middleware.ts
 
 .vercel
