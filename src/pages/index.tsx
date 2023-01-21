@@ -28,11 +28,13 @@ const Home: NextPage = () => {
             Free!
           </Balancer>
         </h2>
+        <Balancer ratio={0.6}>
         <p className="mx-auto mt-12 max-w-xl text-lg leading-7 text-slate-700">
           Bring your photos back to life with our Artificial Intelligence (AI)
           restoration service. Our AI-powered face restoration service can
           restore your old and blurry face photos in seconds.{" "}
         </p>
+        </Balancer>
         <div className="mt-6 flex justify-center sm:mt-1 mb-10">
           <Link
             className="mr-4 rounded-xl bg-black px-4 py-3 text-lg text-white hover:bg-black/80 sm:mt-10"

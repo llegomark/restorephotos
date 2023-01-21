@@ -81,11 +81,13 @@ const Restore: NextPage = () => {
 
       <Header />
       <main className="sm:mt-15 mt-12 flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
-        <span className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 text-sm font-semibold text-[#1d9bf0] transition-colors hover:bg-blue-200">
-          <Link href="/captions">
-            Ready to elevate your photo captions with AI? Try it now!
-          </Link>
-        </span>
+        <Balancer ratio={0.6}>
+          <span className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 text-sm font-semibold text-[#1d9bf0] transition-colors hover:bg-blue-200">
+            <Link href="/captions">
+              Ready to elevate your photo captions with AI? Try it now!
+            </Link>
+          </span>
+        </Balancer>
         <h2 className="font-display mx-auto mb-5 max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
           <Balancer>
             See Your Loved Ones’ Faces in{" "}
@@ -96,10 +98,12 @@ const Restore: NextPage = () => {
             With RestorePhotos.app
           </Balancer>
         </h2>
-        <p className="mb-3 text-slate-500">
-          {" "}
-          <CountUp start={5000} end={7081} /> face restoration and counting.
-        </p>
+        <Balancer ratio={0.6}>
+          <p className="mb-3 text-slate-500">
+            {" "}
+            <CountUp start={5000} end={7081} /> face restoration and counting.
+          </p>
+        </Balancer>
         <ResizablePanel>
           <AnimatePresence mode="wait">
             <motion.div className="mt-0 flex w-full flex-col items-center justify-between">

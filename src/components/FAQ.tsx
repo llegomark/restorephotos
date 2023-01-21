@@ -1,3 +1,5 @@
+import Balancer from "react-wrap-balancer";
+
 interface LinkProps {
   children: React.ReactNode;
   url: string;
@@ -400,55 +402,57 @@ export default function FAQ({ startId, endId }: FAQProps) {
   return (
     <div className="mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-6 lg:py-16 lg:px-8">
       <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
-        Frequently Asked Questions (FAQ)
+        <Balancer>Frequently Asked Questions (FAQ)</Balancer>
       </h2>
-      <div className="mt-8">
+      <div className="mt-8 text-lg">
         <dl className="divide-y divide-gray-200">
           {allFaqs.map((faq) => (
             <div
               key={faq.id}
               className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8"
             >
-              <dt className="text-lg font-medium text-slate-900 md:col-span-5">
+              <dt className="font-medium text-slate-900 md:col-span-5">
                 {faq.question}
               </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
-                <p className="text-justify text-lg text-slate-700">
-                  {faq.answer}{" "}
-                  {faq.id === 13 ? (
-                    <Link
-                      url="https://github.com/TencentARC/GFPGAN"
-                      className="text-blue-500 underline"
-                    >
-                      GFPGAN Github page
-                    </Link>
-                  ) : null}
-                  {faq.id === 13 ? " and " : null}
-                  {faq.id === 13 ? (
-                    <Link
-                      url="https://arxiv.org/abs/2101.04061"
-                      className="text-blue-500 underline"
-                    >
-                      related research paper.
-                    </Link>
-                  ) : null}
-                  {faq.id === 61 ? (
-                    <Link
-                      url="https://github.com/llegomark/restorephotos"
-                      className="text-blue-500 underline"
-                    >
-                      RestorePhotos.app Github page.
-                    </Link>
-                  ) : null}
-                  {faq.id === 62 ? (
-                    <Link
-                      url="mailto:markllego@gmail.com?subject=RestorePhotos.app"
-                      className="text-blue-500 underline"
-                    >
-                      markllego@gmail.com.
-                    </Link>
-                  ) : null}
-                </p>
+                <Balancer ratio={0.6}>
+                  <p className="text-slate-700">
+                    {faq.answer}{" "}
+                    {faq.id === 13 ? (
+                      <Link
+                        url="https://github.com/TencentARC/GFPGAN"
+                        className="text-blue-500 underline"
+                      >
+                        GFPGAN Github page
+                      </Link>
+                    ) : null}
+                    {faq.id === 13 ? " and " : null}
+                    {faq.id === 13 ? (
+                      <Link
+                        url="https://arxiv.org/abs/2101.04061"
+                        className="text-blue-500 underline"
+                      >
+                        related research paper.
+                      </Link>
+                    ) : null}
+                    {faq.id === 61 ? (
+                      <Link
+                        url="https://github.com/llegomark/restorephotos"
+                        className="text-blue-500 underline"
+                      >
+                        RestorePhotos.app Github page.
+                      </Link>
+                    ) : null}
+                    {faq.id === 62 ? (
+                      <Link
+                        url="mailto:markllego@gmail.com?subject=RestorePhotos.app"
+                        className="text-blue-500 underline"
+                      >
+                        markllego@gmail.com.
+                      </Link>
+                    ) : null}
+                  </p>
+                </Balancer>
               </dd>
             </div>
           ))}
