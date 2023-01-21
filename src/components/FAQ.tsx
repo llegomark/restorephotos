@@ -388,7 +388,7 @@ const faqs = [
     id: 62,
     question: "How do I report a bug or issue?",
     answer:
-      "To report a bug or issue, you can either open an issue on the RestorePhotos.app Github page or send an email to",
+      "To report a bug or issue, you can either open an issue on the RestorePhotos.app Github page or send an email to markllego@gmail.com",
   },
 ];
 
@@ -441,14 +441,6 @@ export default function FAQ({ startId, endId }: FAQProps) {
                         className="text-blue-500 underline"
                       >
                         RestorePhotos.app Github page.
-                      </Link>
-                    ) : null}
-                    {faq.id === 62 ? (
-                      <Link
-                        url="mailto:markllego@gmail.com?subject=RestorePhotos.app"
-                        className="text-blue-500 underline"
-                      >
-                        markllego@gmail.com.
                       </Link>
                     ) : null}
                   </p>

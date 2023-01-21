@@ -20,7 +20,9 @@ export default function Footer() {
       </div>
       <div className="flex space-x-3 sm:space-x-4">
         <Link
-          href="https://twitter.com/markllego"
+          href="/twitter"
+          target={"_blank"}
+          rel="noopener noreferrer"
           className="group"
           aria-label="Mark Anthony Llego on Twitter"
         >
@@ -32,7 +34,9 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href="https://github.com/llegomark/"
+          href="/github"
+          target={"_blank"}
+          rel="noopener noreferrer"
           className="group"
           aria-label="Mark Anthony Llego on GitHub"
         >
