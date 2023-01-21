@@ -209,7 +209,7 @@ const Restore: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
-      <FAQ startId={1} endId={26} />
+      <FAQ startId={1} endId={27} />
       <Footer />
     </div>
   );

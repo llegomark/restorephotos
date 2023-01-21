@@ -13,8 +13,8 @@ function classNames(...classes: string[]) {
 }
 
 export type VibeType =
-  | "Professional"
   | "Personal"
+  | "Professional"
   | "Humorous"
   | "Poetic"
   | "Nostalgic"
@@ -45,8 +45,8 @@ interface DropDownProps {
 }
 
 let vibes: VibeType[] = [
-  "Professional",
   "Personal",
+  "Professional",
   "Humorous",
   "Poetic",
   "Nostalgic",
