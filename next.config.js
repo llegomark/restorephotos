@@ -5,6 +5,11 @@ const nextConfig = {
   images: {
     domains: ["upcdn.io", "replicate.delivery"],
   },
+  experimental: {
+    fontLoaders: [
+      { loader: '@next/font/google', options: { subsets: ['latin'] } },
+    ],
+  },
   async redirects() {
     return [
       {
