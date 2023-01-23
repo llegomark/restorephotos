@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { Inter } from "@next/font/google";
 import "../styles/globals.css";
-import { Provider } from 'react-wrap-balancer'
+import { Provider } from "react-wrap-balancer";
 
 const inter = Inter({
   weight: "400",
@@ -16,8 +16,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <main className={inter.className}>
           <Component {...pageProps} />
         </main>
-        <Analytics />
       </Provider>
+      <Analytics />
     </>
   );
 }
