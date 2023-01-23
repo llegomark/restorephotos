@@ -135,17 +135,18 @@ export function Testimonials() {
         <div className="mx-auto text-center">
           <h2 className="font-display mx-auto max-w-4xl text-4xl font-bold tracking-normal text-slate-900 sm:text-5xl">
             <Balancer>
-              Hear It Straight From the Source: Our Web Application Users Speak
-              for Themselves
+            Hear It Straight From the Source: Our Web Application Users Speak
+            for Themselves
             </Balancer>
           </h2>
-          <Balancer ratio={0.6}>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-7 text-slate-700">
-              Discover why people worldwide have fallen in love with
-              RestorePhotos.app. Read testimonials and find out what they have
-              to say.
-            </p>
-          </Balancer>
+
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-7 text-slate-700">
+            <Balancer>
+            Discover why people worldwide have fallen in love with
+            RestorePhotos.app. Read testimonials and find out what they have to
+            say.
+            </Balancer>
+          </p>
         </div>
         <ul
           role="list"
@@ -159,34 +160,34 @@ export function Testimonials() {
                     key={testimonialIndex}
                     className="transition duration-300 ease-in-out hover:scale-105"
                   >
-                    <Balancer ratio={0.6}>
-                      <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
-                        <blockquote className="relative">
-                          <p className="text-lg tracking-tight text-slate-900">
-                            "{testimonial.content}"
-                          </p>
-                        </blockquote>
-                        <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                          <div>
-                            <div className="font-display text-base text-slate-900">
-                              {testimonial.author.name}
-                            </div>
-                            <div className="mt-1 text-sm text-slate-500">
-                              {testimonial.author.role}
-                            </div>
+                    <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+                      <blockquote className="relative">
+                        <p className="text-lg tracking-tight text-slate-900">
+                          <Balancer>
+                          "{testimonial.content}"
+                          </Balancer>
+                        </p>
+                      </blockquote>
+                      <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                        <div>
+                          <div className="font-display text-base text-slate-900">
+                            {testimonial.author.name}
                           </div>
-                          <div className="overflow-hidden rounded-full bg-slate-50">
-                            <Image
-                              className="h-14 w-14 object-cover"
-                              src={testimonial.author.image}
-                              alt="picture of the testimonial author"
-                              width={56}
-                              height={56}
-                            />
+                          <div className="mt-1 text-sm text-slate-500">
+                            {testimonial.author.role}
                           </div>
-                        </figcaption>
-                      </figure>
-                    </Balancer>
+                        </div>
+                        <div className="overflow-hidden rounded-full bg-slate-50">
+                          <Image
+                            className="h-14 w-14 object-cover"
+                            src={testimonial.author.image}
+                            alt="picture of the testimonial author"
+                            width={56}
+                            height={56}
+                          />
+                        </div>
+                      </figcaption>
+                    </figure>
                   </li>
                 ))}
               </ul>

@@ -32,7 +32,8 @@ const faqs = [
   },
   {
     id: 3,
-    question: "Can I use this service to make my photos bigger or better, not just for fixing faces?",
+    question:
+      "Can I use this service to make my photos bigger or better, not just for fixing faces?",
     answer:
       "Yes, you can use this service to not only restore or improve the appearance of faces in your photos, but also to make your photos larger or to enhance their overall quality. ",
   },
@@ -400,7 +401,7 @@ const faqs = [
 
 export default function FAQ({ startId, endId }: FAQProps) {
   const filteredFaqs = faqs.filter(
-    (faq) => faq.id >= startId && faq.id <= endId
+    (faq) => faq.id >= startId && faq.id <= endId,
   );
   const specialFaqs = faqs.filter((faq) => faq.id === 62 || faq.id === 63);
   const allFaqs = filteredFaqs.concat(specialFaqs);
@@ -421,8 +422,8 @@ export default function FAQ({ startId, endId }: FAQProps) {
                 {faq.question}
               </dt>
               <dd className="mt-2 md:col-span-7 md:mt-0">
-                <Balancer ratio={0.6}>
-                  <p className="text-slate-700">
+                <p className="text-slate-700">
+                  <Balancer>
                     {faq.answer}{" "}
                     {faq.id === 14 ? (
                       <Link
@@ -449,8 +450,8 @@ export default function FAQ({ startId, endId }: FAQProps) {
                         RestorePhotos.app Github page.
                       </Link>
                     ) : null}
-                  </p>
-                </Balancer>
+                  </Balancer>
+                </p>
               </dd>
             </div>
           ))}
