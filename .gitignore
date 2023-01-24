@@ -37,5 +37,6 @@ yarn-error.log*
 
 /src/pages/api/
 /src/pages/captions.tsx
+/src/utils/stream.ts
 
 .vercel
